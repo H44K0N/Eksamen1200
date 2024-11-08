@@ -1,0 +1,75 @@
+* {
+    font-family: "Libre Franklin";
+}
+
+/*Stil for generelle elementer*/
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+h3 {
+    font-size: larger;
+}
+
+/*Merk at text-align:center gjelder for p*/
+p {
+    font-size: larger;
+    text-align: center;
+}
+
+/*Bruk denne classen for p-elementer som skal venstrejusteres*/
+p.leftalign {
+    text-align: left;
+    font-size: larger;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    /* Left margin, content, right margin */
+    min-height: 100vh;
+    /* Full height av devicen */
+    background-color: rgb(222, 222, 186);
+}
+
+/*venstre og høyre-margin style*/
+.left-margin,
+.right-margin {
+    background-color: lightgray;
+    background: linear-gradient(to bottom, #00bf7d, #048d5d)
+}
+
+/*Det meste går inni denne, den delen som er på midten av siden*/
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Add some inner padding for spacing */
+}
+
+.table-content {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns of equal width */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* 3 rows with automatic height */
+    gap: 5px;
+    /* Space between grid items */
+}
+
+.inner-grid div {
+    background-color: #f0f0f0;
+    /* Light gray background for grid items */
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    /* Border for visual separation */
+    border-radius: 10px;
+}
