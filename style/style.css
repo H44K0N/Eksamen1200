@@ -1,5 +1,5 @@
-* {
-    font-family: "Libre Franklin";
+h1,h2,h3,p {
+    font-family:"Montserrat", sans-serif;
 }
 
 /*Stil for generelle elementer*/
@@ -31,19 +31,18 @@ body {
     /* Left margin, content, right margin */
     min-height: 100vh;
     /* Full height av devicen */
-    background-color: rgb(222, 222, 186);
+    background-color: #edf7f6;
 }
 
 /*venstre og høyre-margin style*/
 .left-margin,
 .right-margin {
-    background-color: lightgray;
-    background: linear-gradient(to bottom, #00bf7d, #048d5d)
+    background-color: #edf7f6;
 }
 
 /*Det meste går inni denne, den delen som er på midten av siden*/
 .content {
-    max-width: 900px;
+    max-width: auto;
     margin: 0 auto;
     padding: 20px;
     /* Add some inner padding for spacing */
@@ -65,11 +64,11 @@ body {
 }
 
 .inner-grid div {
-    background-color: #f0f0f0;
-    /* Light gray background for grid items */
+    background-color: #e8ccd4;
+    /* Bakgrunn kan muligens fjernes etterhvert */
     padding: 5px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 3px solid #cdbabf;
     /* Border for visual separation */
     border-radius: 10px;
 }
