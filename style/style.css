@@ -1,7 +1,12 @@
+/*Fonter*/
 h1,h2,h3,p {
     font-family:"Montserrat", sans-serif;
 }
-
+hr {height: 3px;
+    background-color: #62626230;
+    border:none;
+    border-radius: 50px;
+}
 /*Stil for generelle elementer*/
 h1 {
     font-size: xx-large;
@@ -12,16 +17,14 @@ h3 {
     font-size: larger;
 }
 
-/*Merk at text-align:center gjelder for p*/
 p {
     font-size: larger;
-    text-align: center;
+    text-align: left;
 }
 
-/*Bruk denne classen for p-elementer som skal venstrejusteres*/
-p.leftalign {
-    text-align: left;
-    font-size: larger;
+/*Bruk denne classen for p-elementer som skal midtjusteres*/
+p.center-text {
+    text-align: center;
 }
 
 body {
@@ -61,6 +64,9 @@ body {
     /* 3 rows with automatic height */
     gap: 5px;
     /* Space between grid items */
+}
+.inner-grid p{
+    text-align: center;
 }
 
 .inner-grid div {
