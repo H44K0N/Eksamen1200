@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+    color: #cfcdcd;
+}
+
+p {
+    color: #848484;
+}
+
+a {
+    color: #6d9597;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #6d4b8d;
+}
+
+a:hover {
+    color: #40f5ff;
+}
+
+a:active {
+    color: #40f5ff;
+}
+
 /* Fjerner standard margins */
 html,
 body {
@@ -113,6 +140,7 @@ aside::before {
 
 /* Sidebar styling */
 .sidebar {
+    top: 0;
     position: sticky;
     transition: translate var(--animation-time);
     translate: 100%;
@@ -170,6 +198,18 @@ hr {
     border-radius: 50px;
 }
 
+.horizontal-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: auto;
+}
+
+.horizontal-nav div {
+    background-color: #FFDC00;
+    font-weight: 400;
+}
+
 /* Generelle semantiske elementer */
 header {
     display: flex;
@@ -180,6 +220,7 @@ header {
 }
 
 .logo {
+
     max-width: 150px;
     max-height: 150px;
 }
@@ -189,11 +230,11 @@ h1 {
     text-align: center;
 }
 
-.content h2 {
+/* .content h2 {
     background-color: #a3a2a2;
     padding: 2px;
     border-radius: 7px;
-}
+} */
 
 h3 {
     font-size: larger;
@@ -218,21 +259,22 @@ p.center-text {
     /* Left margin, content, right margin */
     min-height: 100vh;
     /* Full height av devicen */
-    background-color: hsl(174, 38%, 95%);
+    background-color: #121212;
 }
 
 /* venstre og høyre-margin style */
-.left-margin,
-.right-margin {
-    background-color: #edf7f6;
-}
+/* .left-margin,
+.right-margin {} */
 
 /* Det meste går inni denne, den delen som er på midten av siden */
 .content {
     max-width: 75%;
     margin: 0 auto;
+    margin-top: 15px;
     padding: 20px;
+    background-color: #1E1E1E;
     /* Add some inner padding for spacing */
+    border-radius: 15px;
 }
 
 /* Grid styling */
@@ -256,11 +298,10 @@ p.center-text {
 }
 
 .inner-grid div {
-    background-color: #e8ccd4;
+    background-color: #2E2E2E;
     /* Bakgrunn kan muligens fjernes etterhvert */
     padding: 5px;
     text-align: center;
-    border: 3px solid #cdbabf;
     /* Border for visual separation */
     border-radius: 10px;
 }
