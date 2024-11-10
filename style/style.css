@@ -298,7 +298,7 @@ p.center-text {
 }
 
 .inner-grid div {
-    background-color: #2E2E2E;
+    /* background-color: #2E2E2E; */
     /* Bakgrunn kan muligens fjernes etterhvert */
     padding: 5px;
     text-align: center;
