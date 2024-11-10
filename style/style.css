@@ -305,3 +305,57 @@ p.center-text {
     /* Border for visual separation */
     border-radius: 10px;
 }
+
+
+
+/* Her kommer css for bare activity page  */
+#klatre-bilde-boks{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: aqua;
+  margin-bottom: 30px;
+}
+
+#klatre-bilde{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.påmelding-placeholder{
+  margin-top: 10px;
+  font-size: 20px;
+  display: block;
+}
+
+.a-btn{
+  background-color: palegreen;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+
+
+.section-a2{
+  margin-top: 30px;  
+  display: flex;
+  flex-direction: row;
+}
+
+
+.a-left-div{
+  height: 200px;
+  flex: 1;
+  background-color: lightblue;
+ 
+
+}
+
+.a-rigth-div{
+  height: 200px;
+  flex: 1;
+  background-color: lightpink;
+ 
+}
