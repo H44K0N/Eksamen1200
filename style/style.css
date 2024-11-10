@@ -350,7 +350,7 @@ p.center-text {
 
 
 .a-left-div {
-    height: 200px;
+    height: 500px;
     flex: 1;
     background-color: lightblue;
 
@@ -358,8 +358,13 @@ p.center-text {
 }
 
 .a-rigth-div {
-    height: 200px;
+    height: 500px;
     flex: 1;
     background-color: lightpink;
 
+}
+
+.klatrebilde2{
+    width: 90%;
+    height: auto;
 }
