@@ -371,8 +371,10 @@ p.center-text {
 
 #klatre-bilde {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
+
+    
 }
 
 
@@ -382,6 +384,18 @@ p.center-text {
     flex-direction: row;
     justify-content: space-between;
 }
+
+
+@media (max-width: 700px){
+    .a-section2 {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+}
+
 
 
 .a-left-div {
@@ -415,6 +429,11 @@ p.center-text {
 
 
 
+
+
+
+
+
 .påmelding-placeholder {
     width: 70%;
     margin-top: 10px;
@@ -422,6 +441,7 @@ p.center-text {
     display: block;
     border-radius: 5px;
     border: none;
+    margin-bottom: 5px;
 }
 
 
@@ -432,12 +452,19 @@ p.center-text {
     font-size: 20px;
     margin-top: 10px;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.a-btn:hover{
+    cursor: pointer;
 }
 
 .a-bilde2 {
     width: 90%;
-    height: auto;
+    height: 90%;
     border-radius: 20px;
+    object-fit: cover;
 
 }
 
@@ -480,4 +507,34 @@ table {
     color: black;
     background-color: white;
   }
+
+
+
+
+  @media (max-width: 800px) {
+    table {
+        width: 100%; /* Gjør tabellen fullbredde på mobil */
+        font-size: 12px; /* Gjør teksten mindre */
+    }
+
+    th, td {
+        padding: 6px; /* Reduser padding for cellene */
+    }
+}
+
+
+
+  @media (max-width: 700px) {
+    table {
+        width: 100%; /* Gjør tabellen fullbredde på mobil */
+        font-size: 12px; /* Gjør teksten mindre */
+    }
+
+    th, td {
+        padding: 2px; /* Reduser padding for cellene */
+    }
+}
+
+
+
 
