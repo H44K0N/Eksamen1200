@@ -326,6 +326,12 @@ p.center-text {
     padding: 5px;
 }
 
+.Studieår-bakgrunn {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 10px;
+}
+
 /* Her kommer css for bare activity page  */
 #klatre-bilde-boks {
     width: 100%;
@@ -377,6 +383,7 @@ p.center-text {
 
 }
 
+<<<<<<< Updated upstream
 
 
 
@@ -401,6 +408,9 @@ p.center-text {
 }
 
 .a-bilde2{
+=======
+.klatrebilde2 {
+>>>>>>> Stashed changes
     width: 90%;
     height: auto;
     border-radius: 20px;
