@@ -323,39 +323,81 @@ p.center-text {
   object-fit: cover;
 }
 
-.påmelding-placeholder{
-  margin-top: 10px;
-  font-size: 20px;
-  display: block;
-}
 
-.a-btn{
-  background-color: palegreen;
-  padding: 10px;
-  border: none;
-  margin-top: 10px;
-}
-
-
-
-.section-a2{
+.a-section2{
   margin-top: 30px;  
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  
 }
 
 
 .a-left-div{
-  height: 200px;
+    display: flex;
+    flex-direction: column;
+  height: 400px;
   flex: 1;
-  background-color: lightblue;
+  margin-right: 10px;
+  background-color: #2E2E2E;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
  
-
 }
 
 .a-rigth-div{
-  height: 200px;
+display: flex;
+margin-left: 10px;
+  height: 400px;
   flex: 1;
-  background-color: lightpink;
+  background-color: #2E2E2E;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
  
 }
+
+
+.påmelding-placeholder{
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+  }
+  
+  .a-btn{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+  }
+
+
+  .klatrebilde2{
+    width: 95%;
+    height: auto;
+    border-radius: 10px;
+
+  }
+  
+  .a-section3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: #2E2E2E;
+
+
+  }
