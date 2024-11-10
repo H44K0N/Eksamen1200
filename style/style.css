@@ -383,7 +383,6 @@ p.center-text {
 
 }
 
-<<<<<<< Updated upstream
 
 
 
@@ -407,27 +406,23 @@ p.center-text {
     border-radius: 5px;
 }
 
-.a-bilde2{
-=======
-.klatrebilde2 {
->>>>>>> Stashed changes
+.a-bilde2 {
     width: 90%;
     height: auto;
     border-radius: 20px;
 
 }
 
-.a-section3{
+.a-section3 {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #333;;
+    background-color: #333;
+    ;
     border-radius: 10px;
 
 
 
 }
-
-
