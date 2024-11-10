@@ -420,9 +420,36 @@ p.center-text {
     justify-content: center;
     align-items: center;
     background-color: #333;
-    ;
     border-radius: 10px;
-
-
-
 }
+
+
+table {
+    margin-top: 20px;
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    color: white;
+    
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+   
+  }
+
+  .tekstfarge{
+    color: black;
+  }
+
+  .tekst-boks-farge{
+    color: black;
+    background-color: white;
+  }
+
