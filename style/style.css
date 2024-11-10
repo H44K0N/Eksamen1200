@@ -272,7 +272,7 @@ p.center-text {
 
 /* Det meste går inni denne, den delen som er på midten av siden */
 .content {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
     margin-top: 15px;
     padding: 20px;
@@ -310,7 +310,21 @@ p.center-text {
     border-radius: 10px;
 }
 
+.inner-grid-spesialisering {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns of equal width */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    /* 3 rows with automatic height */
+    gap: 10px;
+    /* Space between grid items */
+}
 
+.inner-grid-spesialisering div {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 5px;
+}
 
 /* Her kommer css for bare activity page  */
 #klatre-bilde-boks {
