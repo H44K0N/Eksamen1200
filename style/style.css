@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+/* Fjerner standard margins */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* ------------------------------------------------------------------------------------------------- */
 /*                                       Responsiv nav-bar                                           */
 /*         hentet fra https://github.com/WebDevSimplified/css-only-hamburger-menu/tree/main          */
@@ -164,14 +172,16 @@ hr {
 
 /* Generelle semantiske elementer */
 header {
+    display: flex;
     background-color: #FFDC00;
-    z-index: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+    /* Higher z-index to ensure it's on top */
 }
 
 .logo {
     max-width: 150px;
     max-height: 150px;
-    margin-left: auto;
 }
 
 h1 {
