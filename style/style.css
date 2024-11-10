@@ -37,6 +37,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* ------------------------------------------------------------------------------------------------- */
@@ -203,18 +204,21 @@ hr {
     flex-direction: row;
     justify-content: flex-start;
     margin-top: auto;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .horizontal-nav div {
-    background-color: #FFDC00;
+    background-color: #d9bd09;
     font-weight: 400;
 }
 
 /* Generelle semantiske elementer */
 header {
     display: flex;
-    background-color: #FFDC00;
+    background-color: #d9bd09;
     padding: 10px 20px;
+    padding-top: 0;
     z-index: 1000;
     /* Higher z-index to ensure it's on top */
 }
@@ -309,53 +313,53 @@ p.center-text {
 
 
 /* Her kommer css for bare activity page  */
-#klatre-bilde-boks{
-  width: 100%;
-  height: 500px;
-  overflow: hidden;
-  background-color: aqua;
-  margin-bottom: 30px;
+#klatre-bilde-boks {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: aqua;
+    margin-bottom: 30px;
 }
 
-#klatre-bilde{
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+#klatre-bilde {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.påmelding-placeholder{
-  margin-top: 10px;
-  font-size: 20px;
-  display: block;
+.påmelding-placeholder {
+    margin-top: 10px;
+    font-size: 20px;
+    display: block;
 }
 
-.a-btn{
-  background-color: palegreen;
-  padding: 10px;
-  border: none;
-  margin-top: 10px;
-}
-
-
-
-.section-a2{
-  margin-top: 30px;  
-  display: flex;
-  flex-direction: row;
+.a-btn {
+    background-color: palegreen;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
 }
 
 
-.a-left-div{
-  height: 200px;
-  flex: 1;
-  background-color: lightblue;
- 
+
+.section-a2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.a-left-div {
+    height: 200px;
+    flex: 1;
+    background-color: lightblue;
+
 
 }
 
-.a-rigth-div{
-  height: 200px;
-  flex: 1;
-  background-color: lightpink;
- 
+.a-rigth-div {
+    height: 200px;
+    flex: 1;
+    background-color: lightpink;
+
 }
