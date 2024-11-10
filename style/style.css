@@ -326,10 +326,38 @@ p.center-text {
     padding: 5px;
 }
 
+.inner-grid-spesialisering h3 {
+    text-align: left;
+}
+
 .Studieår-bakgrunn {
     background-color: #333;
     border-radius: 15px;
     padding: 10px;
+}
+
+.fag-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns of equal width */
+    grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+    /* 3 rows with automatic height */
+    gap: 5px;
+    /* Space between grid items */
+}
+
+.fag {
+    display: flex;
+    flex-direction: column;
+}
+
+.fag h3 {
+    margin-bottom: 5px;
+}
+
+.fag p {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 /* Her kommer css for bare activity page  */
