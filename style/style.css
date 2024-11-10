@@ -163,9 +163,26 @@ hr {
 }
 
 /* Generelle semantiske elementer */
+header {
+    background-color: #FFDC00;
+    z-index: 0;
+}
+
+.logo {
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: auto;
+}
+
 h1 {
     font-size: xx-large;
     text-align: center;
+}
+
+.content h2 {
+    background-color: #a3a2a2;
+    padding: 2px;
+    border-radius: 7px;
 }
 
 h3 {
@@ -202,7 +219,7 @@ p.center-text {
 
 /* Det meste går inni denne, den delen som er på midten av siden */
 .content {
-    max-width: 1000px;
+    max-width: 75%;
     margin: 0 auto;
     padding: 20px;
     /* Add some inner padding for spacing */
