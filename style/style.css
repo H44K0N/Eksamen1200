@@ -2,20 +2,21 @@
 * {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
-  }
-  
-  /* ------------------------------------------------------------------------------------------------- */
-  /*                                       Responsiv nav-bar                                           */
-  /*         hentet fra https://github.com/WebDevSimplified/css-only-hamburger-menu/tree/main          */
-  /*         Tilpasset til oppgaven                                                                    */
-  /* ------------------------------------------------------------------------------------------------- */
-  
-  *::after,
-  *::before {
+}
+
+/* ------------------------------------------------------------------------------------------------- */
+/*                                       Responsiv nav-bar                                           */
+/*         hentet fra https://github.com/WebDevSimplified/css-only-hamburger-menu/tree/main          */
+/*         Tilpasset til oppgaven                                                                    */
+/* ------------------------------------------------------------------------------------------------- */
+
+*::after,
+*::before {
     box-sizing: border-box;
-  }
-  /* Variabler for hamburger-meny */
-  :root {
+}
+
+/* Variabler for hamburger-meny */
+:root {
     --bar-width: 60px;
     --bar-height: 8px;
     --hamburger-gap: 6px;
@@ -25,36 +26,39 @@
     --animation-time: 200ms ease-in-out;
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
-  }
-  
-  /* Hamburger-meny */
-  .hamburger-meny {
+}
+
+/* Hamburger-meny */
+.hamburger-meny {
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
     width: max-content;
-    position: fixed; /* Use fixed to keep it at the top right */
-    top: var(--hamburger-margin); /* Distance from the top of the screen */
-    right: var(--hamburger-margin); /* Distance from the right side of the screen */
+    position: fixed;
+    /* Use fixed to keep it at the top right */
+    top: var(--hamburger-margin);
+    /* Distance from the top of the screen */
+    right: var(--hamburger-margin);
+    /* Distance from the right side of the screen */
     z-index: 2;
     cursor: pointer;
-  }
-  
-  .hamburger-meny:has(input:checked) {
+}
+
+.hamburger-meny:has(input:checked) {
     --foreground: white;
     --background: #333;
-  }
-  
-  .hamburger-meny:has(input:focus-visible)::before,
-  .hamburger-meny:has(input:focus-visible)::after,
-  .hamburger-meny input:focus-visible {
+}
+
+.hamburger-meny:has(input:focus-visible)::before,
+.hamburger-meny:has(input:focus-visible)::after,
+.hamburger-meny input:focus-visible {
     border: 1px solid var(--background);
     box-shadow: 0 0 0 1px var(--foreground);
-  }
-  
-  .hamburger-meny::before,
-  .hamburger-meny::after,
-  .hamburger-meny input {
+}
+
+.hamburger-meny::before,
+.hamburger-meny::after,
+.hamburger-meny input {
     content: "";
     width: var(--bar-width);
     height: var(--bar-height);
@@ -62,63 +66,67 @@
     border-radius: 9999px;
     transform-origin: left center;
     transition: opacity var(--animation-time), width var(--animation-time),
-      rotate var(--animation-time), translate var(--animation-time),
-      background-color var(--animation-time);
-  }
-  
-  .hamburger-meny input {
+        rotate var(--animation-time), translate var(--animation-time),
+        background-color var(--animation-time);
+}
+
+.hamburger-meny input {
     appearance: none;
     padding: 0;
     margin: 0;
     outline: none;
     pointer-events: none;
-  }
-  
-  .hamburger-meny:has(input:checked)::before {
+}
+
+.hamburger-meny:has(input:checked)::before {
     rotate: 45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / -2);
-  }
-  
-  .hamburger-meny:has(input:checked)::after {
+}
+
+.hamburger-meny:has(input:checked)::after {
     rotate: -45deg;
     width: var(--x-width);
     translate: 0 calc(var(--bar-height) / 2);
-  }
-  
-  /* Test for checkbox */
-  .hamburger-meny input:checked {
+}
+
+/* Test for checkbox */
+.hamburger-meny input:checked {
     opacity: 0;
     width: 0;
-  }
-  
-  aside,
-  aside::after,
-  aside::before {
+}
+
+aside,
+aside::after,
+aside::before {
     box-sizing: border-box;
     margin: 0;
-  }
+}
 
-  /* Sidebar styling */
-  .sidebar {
+/* Sidebar styling */
+.sidebar {
     position: sticky;
     transition: translate var(--animation-time);
-    translate: 100%; /* Plassering av sidebar på høyre side */
+    translate: 100%;
+    /* Plassering av sidebar på høyre side */
     padding: 0.5rem 1rem;
     padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
     background-color: var(--foreground);
     color: var(--background);
     max-width: 100rem;
     min-height: 100vh;
-    position: fixed; /* Holder sidebaren til høyre */
-    right: 0; /* høyrejuster sidebar */
-  }
-  
-  .hamburger-meny:has(input:checked) + .sidebar {
+    position: fixed;
+    /* Holder sidebaren til høyre */
+    right: 0;
+    /* høyrejuster sidebar */
+}
+
+.hamburger-meny:has(input:checked)+.sidebar {
     translate: 0;
-  }
-  /* Style innsiden av nav-baren */
-  nav div{
+}
+
+/* Style innsiden av nav-baren */
+nav div {
     display: flex;
     flex-direction: column;
     font-size: xx-large;
@@ -129,81 +137,84 @@
     color: #333;
     transition: var(--animation-time);
     text-align: center;
-  }
-  nav div:hover{
+}
+
+nav div:hover {
     background-color: #333;
     color: white;
-  }
-  nav a{
+}
+
+nav a {
     text-decoration: none;
-  }
+}
+
 /*   nav div a:hover{
     background-color: #333;
     color: white;
   } */
-  /*                                    Generelle elementer                                  */
-  /* --------------------------------------------------------------------------------------- */
-  /* Horisontale line breaks */
-  hr {
+/*                                    Generelle elementer                                  */
+/* --------------------------------------------------------------------------------------- */
+/* Horisontale line breaks */
+hr {
     height: 3px;
     background-color: #62626230;
     border: none;
     border-radius: 50px;
-  }
-  
-  /* Generelle semantiske elementer */
-  h1 {
+}
+
+/* Generelle semantiske elementer */
+h1 {
     font-size: xx-large;
     text-align: center;
-  }
-  
-  h3 {
+}
+
+h3 {
     font-size: larger;
-  }
-  
-  p {
+}
+
+p {
     font-size: larger;
     text-align: left;
-  }
-  
-  /* Bruk denne classen for p-elementer som skal midtjusteres */
-  p.center-text {
+}
+
+/* Bruk denne classen for p-elementer som skal midtjusteres */
+p.center-text {
     text-align: center;
-  }
-  
-  
-  /* Body styling */
-  body {
+}
+
+
+/* Content-grid styling */
+.content-grid {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     /* Left margin, content, right margin */
     min-height: 100vh;
     /* Full height av devicen */
+    background-color: hsl(174, 38%, 95%);
+}
+
+/* venstre og høyre-margin style */
+.left-margin,
+.right-margin {
     background-color: #edf7f6;
-  }
-  
-  /* venstre og høyre-margin style */
-  .left-margin,
-  .right-margin {
-    background-color: #edf7f6;
-  }
-  
-  /* Det meste går inni denne, den delen som er på midten av siden */
-  .content {
-    max-width: auto;
+}
+
+/* Det meste går inni denne, den delen som er på midten av siden */
+.content {
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
     /* Add some inner padding for spacing */
-  }
-  
-  /* Grid styling */
-  .table-content {
+}
+
+/* Grid styling */
+.table-content {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
-  }
-  
-  .inner-grid {
+}
+
+.inner-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* 3 columns of equal width */
@@ -211,13 +222,13 @@
     /* 3 rows with automatic height */
     gap: 5px;
     /* Space between grid items */
-  }
-  
-  .inner-grid p {
+}
+
+.inner-grid p {
     text-align: center;
-  }
-  
-  .inner-grid div {
+}
+
+.inner-grid div {
     background-color: #e8ccd4;
     /* Bakgrunn kan muligens fjernes etterhvert */
     padding: 5px;
@@ -225,6 +236,4 @@
     border: 3px solid #cdbabf;
     /* Border for visual separation */
     border-radius: 10px;
-  }
-  
-  
+}
