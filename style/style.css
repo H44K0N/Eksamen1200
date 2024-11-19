@@ -367,7 +367,9 @@ p.center-text {
     margin-right: 20px;
 }
 
-/* Her kommer css for bare activity page  */
+
+/*                                Styling for activity page + footer                                */
+/* --------------------------------------------------------------------------------------- */
 
 
 #klatre-bilde-boks {
@@ -382,8 +384,6 @@ p.center-text {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    
 }
 
 
@@ -638,14 +638,16 @@ table {
     border-radius: 15px;
 }
 
-
+/*Her er styling for alt i footeren */
 
 footer{
     width: 100%;
-    height: 550px;
     background-color: #333;
+    padding-bottom: 30px;
 }
 
+/* Oppretter en div boks som vi kan sette til en flexbox for
+ å midtsentrere innholdet  */
 .sub-footer{
     margin-top: 30px;
     width: 100%;
@@ -654,22 +656,39 @@ footer{
     
 }
 
-
+/*Her er footerns "header" (kanppen til nyhetsbrevet osv) */
 .footer-headline{
-
-    
     width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 10px;
     align-items: flex-start;
-    
-   
-
 }
 
+/* Adjust footer layout for 
+smaller screens: stack items vertically and align to the left.  */
+    @media (max-width: 800px){
+    
+        .footer-headline{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            column-gap: 10px;
+            align-items: flex-start;
+        } 
+    } 
+
+
+
+ /* Vi har opprettet tre div-bokser inne i footeren sin "heading". En 
+ venstrdel som inneholder en overskrfit, en midtdel som nå er tom, men hvor man kan legge til ting
+ senere, og en høyre del som inneholder en knapp. Når vi setter flex: 1, flex: 2, flex: 4, osv. i en
+  flexbox-layout, bestemmer vi hvor mye plass hvert element skal ta i forhold til de andre elementene. Dette er gjort
+  for at den skal bli mest mulig skalerbar når man juster størrelse på siden. */
+
 .footer-headline-left{
-       flex: 4;
+    flex: 4;
 }
 
 .footer-headline-left h2{
@@ -677,22 +696,18 @@ footer{
     margin-left: 10px;
 }
 
-
 .footer-headline-mid{
-    /*  border: 2px solid black;    */
     flex: 1;
 }
 
 .footer-headline-rigth{
     display: flex;
     justify-content: center;
-     /*  border: 2px solid black;    */
-    flex: 3;
-    
-       
+    flex: 3;  
 }
 
-.abonner-nyhetsbrev{
+
+.btn-abonner-nyhetsbrev{
     margin-top: 20px;
     font-size: 15px;
     padding-top: 0px;
@@ -703,25 +718,38 @@ footer{
 
 }
 
+/*Her kommer hoveddelen av footeren, som også består av tre vertikale flex-bokser */
+
 .footer-main{
     margin-top: 30px;
     display: flex;
-    height: 500px;
     border-top: 2px solid white;
 
 }
 
-.footer-main p{
-    margin-top: 5px;
-    margin-bottom: 0px;
-    margin-left: 10px;
-    
-}
+/* Adjust footers main content layout for 
+smaller screens: stack items vertically. 
+*/
 
+@media (max-width: 800px){
+
+    .footer-main{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid white;
+    } 
+} 
+
+
+/* Endrer tekstfargen i listen, og legger til innvendig
+ mellomrom (padding), og fjerner punktmerkene (bullet points) 
+ fra listen. 
+ */
 .footer-main ul{
     color: white;
     padding: 5px;
-    list-style: none;
+    list-style: none;  
 }
 
 .footer-main ul li{
@@ -729,19 +757,21 @@ footer{
 }
 
 
-
 .footer-main h3{
     margin-top: 0px;
-
 }
+
+
 
 .footer-main-left{
     margin-top: 30px;
     flex: 1;
-    border: 2px solid black; */
-    
+    border: 2px solid black;  
 }
 
+
+/* Bruker nested flexbox teknikk for å kunne manipulere plassering til elemnter inni containeren.
+i dette tilfellet  */
 .footer-main-middle{
     margin-top: 30px;
     flex: 1;
@@ -751,6 +781,21 @@ footer{
     align-items: end;
 }
 
+/* Adjust miidle container in the footers-main content layout for 
+smaller screens: stack items to the start (left) in sted of rigth. 
+*/
+@media (max-width: 800px){
+    
+.footer-main-middle{
+    margin-top: 30px;
+    flex: 1;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+} 
+
 .footer-main-rigth{
     margin-top: 30px;
     flex: 1;
@@ -759,4 +804,20 @@ footer{
     flex-direction: column;
     border: 2px solid black;
 }
+
+/* Adjust rigth container in the footers-main content layout for 
+smaller screens: stack items to the start (left) in sted of to the centre. 
+*/
+     @media (max-width: 800px){
+            
+        .footer-main-rigth{
+            margin-top: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid black;
+            align-items: flex-start;
+        }
+        } 
+            
 
