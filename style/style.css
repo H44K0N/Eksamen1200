@@ -879,4 +879,12 @@ smaller screens: stack items to the start (left) in sted of to the centre.
         }
         } 
             
+/*                                Styling for GitHub side                                */
+/* --------------------------------------------------------------------------------------- */
 
+#gitcommit1 {
+    margin: 10px;
+    width: 800px;
+    height: 600px;
+
+}
