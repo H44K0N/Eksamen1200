@@ -374,6 +374,7 @@ p.center-text {
     /* 3 rows with automatic height */
     gap: 20px;
     /* Space between grid items */
+    margin-bottom: 30px;
     
 }
 @media (max-width: 480px) {
@@ -406,6 +407,27 @@ p.center-text {
 }
 
 
+
+.informasjon-seksjon{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    
+}
+
+.informasjon-seksjon ul{
+    color: white;
+    padding: 5px;  
+}
+
+.informasjon-seksjon ul li{
+    padding-top: 16px;
+}
+
+
+
+
+
+/*
 #hvordan-foregår-undervisningen{
     margin-top: 40px;
 }
@@ -429,6 +451,7 @@ p.center-text {
 #utveksling{
     margin-top: 40px;
 }
+*/
 
 
 
