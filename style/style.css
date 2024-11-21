@@ -403,6 +403,20 @@ p.center-text {
     margin-right: 15px;
 }
 
+#hvordan-foregår-undervisningen{
+    margin-top: 40px;
+}
+#hvordan-foregår-undervisningen ul{
+    color: white;
+    padding: 5px;
+    
+}
+
+#hvordan-foregår-undervisningen ul li{
+    padding-top: 16px;
+}
+
+
 
 /*                                Styling for activity page + footer                                */
 /* --------------------------------------------------------------------------------------- */
