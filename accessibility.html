@@ -76,13 +76,33 @@
                 <h2>
                     Hvordan har vi implementert universelt design i vårt prosjekt?</h2>
                     <p>
-                        På vårt nettsted har vi implementert universelt design ved å sikre at all tekst har høy kontrast mot bakgrunnen for å forbedre lesbarheten.<br> Alle bilder har alternativ tekst for skjermlesere, og at nettstedet kan navigeres fullt ut med tastaturet. Vi har også sørget for at all funksjonalitet er tilgjengelig selv når JavaScript er deaktivert.
+                        På vårt nettsted har vi implementert universelt design ved å sikre at all tekst har høy kontrast mot bakgrunnen for å forbedre lesbarheten.<br> Alle bilder har alternativ tekst for skjermlesere og nettstedet kan navigeres fullt ut med tastaturet. Vi har også sørget for at all funksjonalitet er tilgjengelig selv når JavaScript er deaktivert. For å sikre at alle brukere (uten spesielle forutsetninger) kan bruke og navigere nettsiden effektivt, har vi tatt i bruk en rekke tiltak som følger prinsippene for universell utforming og Web Content Accessibility Guidelines (WCAG). Vi har gjennomført følgende nøkkeltiltak: <br>
+
+                        Struktur og semantikk <br>
+                        Vi har bygget nettsiden med en klar og logisk struktur ved å bruke semantiske HTML-elementer som "header", "main", "nav" og "footer". Dette gjør det enklere for skjermlesere og annen assistert tale- og tekstteknologi å forstå innholdet. Overskrifter er korrekt strukturert i hierarkisk rekkefølge med "h1"–"h6", noe som gjør det enkelt å navigere i materialet. <br>
+                        
+                        Fargekontrast og visuell lesbarhet <br>
+                        Vi har sikret at all tekst og bakgrunnsfarge oppfyller kravene i WCAGs kontrastforhold, med minst 4,5:1 for vanlig tekst og 3:1 for stor tekst. Dette hjelper brukere med synsnedsettelser eller fargeblindhet. Vi unngår også å bruke farge alene for å formidle et budskap, men supplerer fargesignaler med tekst eller ikoner. <br>
+                        
+                        Tastaturnavigasjon <br>
+                        Hele nettstedet kan navigeres kun ved hjelp av tastatur, noe som er viktig for brukere som ikke kan bruke mus. Interaktive elementer som lenker, knapper og skjemaer har tydelig definerte fokusstiler, slik at det er lett å identifisere hvor man befinner seg under navigasjonen. <br>
+                        
+                        Tilpasninger for skjermlesere <br>
+                        Vi har implementert ARIA (Accessible Rich Internet Applications) for å gjøre det lettere for skjermlesere å få tilgang til interaktive elementer som menyer og skjemaer. Alt innhold, inkludert bilder og multimedia, er utstyrt med alternativ tekst (alt-tekst) som beskriver innholdet. <br>
+                        
+                        Responsivt og tilpasningsdyktig design <br>
+                        Nettsiden vår er designet for å fungere på alle skjermstørrelser og enheter. Det er mulig å zoome inn og ut uten at innholdet forvrenges. Vi har også sørget for at nettsiden fungerer like godt på små mobile enheter som på store skjermer. <br>
+                        
+                        Brukertesting og kontinuerlig forbedring <br>
+                        Vi har gjennomført brukertesting med personer med ulike forutsetninger for å identifisere hindringer og implementere nødvendige endringer. <br>
+                        
+                        Dermed har vi utviklet en nettside som er inkluderende, enkel å bruke og så tilgjengelig som mulig for alle. Tilgjengelighet er en kontinuerlig prosess, og vi jobber stadig for å forbedre opplevelsen for alle brukere.
                     </p>
             </section>
             <section>
                 <h2>Tilgjengelighetstesting</h2>
                 <p>
-                    Vi har brukt automatiserte tester som W3C Markup Validation Service og Google Lighthouse for å sjekke kvaliteten på koden vår.<br> Disse testene har hjulpet oss med å identifisere og løse problemer med tilgjengelighet, som utilstrekkelig fargekontrast og manglende alternativ tekst for bilder. Vi har også gjennomført manuell testing for å sikre at nettstedet fungerer godt for alle brukere.
+                    Vi har brukt automatiserte tester som W3C Markup Validation Service og Accesibilitychecker.org for å sjekke kvaliteten på koden vår.<br> Disse testene har hjulpet oss med å identifisere og løse problemer med tilgjengelighet, som utilstrekkelig fargekontrast og manglende alternativ tekst for bilder. Vi har også gjennomført manuell testing for å sikre at nettstedet fungerer godt for alle brukere.
                 </p>
             </section>
             <footer>
