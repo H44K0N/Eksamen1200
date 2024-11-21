@@ -337,7 +337,7 @@ p.center-text {
 .inner-grid-spesialisering {
     display: grid;
     /* 3 columns of equal width */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* 3 rows with automatic height */
     gap: 10px;
     /* Space between grid items */
@@ -372,8 +372,13 @@ p.center-text {
     /* 3 rows with automatic height */
     gap: 20px;
     /* Space between grid items */
+    
 }
-
+@media (max-width: 480px) {
+        .hide {
+            display: none;
+        }
+    }
 .fag {
     display: flex;
     flex-direction: column;
