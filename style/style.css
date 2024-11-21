@@ -63,7 +63,7 @@ border-radius: 20px;
     --bar-width: 60px;
     --bar-height: 8px;
     --hamburger-gap: 6px;
-    --hamburger-margin: 8px;
+    --hamburger-margin: 20px;
     --foreground: #333;
     --background: white;
     --animation-time: 200ms ease-in-out;
@@ -727,6 +727,10 @@ smaller screens: stack items vertically and align to the left.  */
     display: flex;
     justify-content: center;
     flex: 3;  
+}
+
+.footer-headline-rigth p{
+    color: black;
 }
 
 
