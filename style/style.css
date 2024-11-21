@@ -336,18 +336,19 @@ p.center-text {
 
 .inner-grid-spesialisering {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     /* 3 columns of equal width */
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* 3 rows with automatic height */
     gap: 10px;
     /* Space between grid items */
+    white-space: normal;
+    word-break: break-word;
 }
 
 .inner-grid-spesialisering div {
     background-color: #333;
     border-radius: 15px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .inner-grid-spesialisering h3 {
@@ -359,29 +360,42 @@ p.center-text {
     border-radius: 15px;
     padding: 10px;
 }
+.Semester{
+    font-size: large;
+    margin-left:20px;
+}
 
 .fag-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     /* 3 columns of equal width */
-    grid-template-rows: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* 3 rows with automatic height */
-    gap: 5px;
+    gap: 20px;
     /* Space between grid items */
 }
 
 .fag {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    padding-left: 15px;
+    min-height: 150px;
 }
 
 .fag h3 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.fag p {
-    display: inline-block;
-    margin-right: 20px;
+.p-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    margin-right: 15px;
 }
 
 
