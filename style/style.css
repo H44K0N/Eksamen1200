@@ -267,11 +267,14 @@ p.center-text {
     margin: 0;
     display: grid;
     grid-template-columns:1fr auto 1fr;
+    column-gap: 10px;
     /* Left margin, content, right margin */
     min-height: 100vh;
     /* Full height av devicen */
     background-color: #121212;
 }
+
+
 
 /* venstre og høyre-margin style */
 /* .left-margin,
@@ -281,6 +284,12 @@ p.center-text {
 } */
 
 /* Det meste går inni denne, den delen som er på midten av siden */
+
+
+
+
+@media (min-width: 700px){
+  
 .content {
     max-width: 80%;
     margin: 0 auto;
@@ -290,6 +299,11 @@ p.center-text {
     /* Add some inner padding for spacing */
     border-radius: 15px;
 }
+}
+
+
+
+
 
 /* Grid styling */
 .table-content {
