@@ -39,6 +39,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #121212;
 }
 .video-bilde{
   display: block;
@@ -425,7 +426,8 @@ p.center-text {
 
 
 #student-historier{
-    width: 100%;
+    
+    width: 90%;
     background-color: #d9bd09;
     display: flex;
     
