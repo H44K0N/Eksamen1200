@@ -214,7 +214,11 @@ hr {
     max-width: 100%;
     overflow-x: hidden;
 }
-
+@media (max-width:800px){
+    .horizontal-nav {
+        display: none;
+    }
+}
 .horizontal-nav div {
     background-color: #d9bd09;
     font-weight: 400;
