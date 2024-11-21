@@ -878,7 +878,6 @@ smaller screens: stack items to the start (left) in sted of to the centre.
             flex: 1;
             display: flex;
             flex-direction: column;
-            border: 2px solid black;
             align-items: flex-start;
         }
         } 
