@@ -435,14 +435,6 @@ p.center-text {
 }
 
 
-
-
-
-
-
-
-
-
 .påmelding-placeholder {
     width: 70%;
     margin-top: 10px;
@@ -641,6 +633,7 @@ table {
 /*Her er styling for alt i footeren */
 
 footer{
+    margin-top: 90px;
     width: 100%;
     background-color: #333;
     padding-bottom: 30px;
@@ -649,7 +642,6 @@ footer{
 /* Oppretter en div boks som vi kan sette til en flexbox for
  å midtsentrere innholdet  */
 .sub-footer{
-    margin-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
