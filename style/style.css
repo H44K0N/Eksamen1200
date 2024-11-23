@@ -1,18 +1,46 @@
-/* Fonter*/
+
+
+
+
+
+
+/*                                   Generelle Fonter                                               */
+/* --------------------------------------------------------------------------------------- */
+
 * {
     font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #ffffff;
 }
 
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* .content h2 {
+    background-color: #a3a2a2;
+    padding: 2px;
+    border-radius: 7px;
+} */
+
+h3 {
+    font-size: larger;
+}
+
 p {
+    font-size: larger;
+    text-align: left;
     color: #b4b4b4;
     max-width: 1000px;
+}
+
+/* Bruk denne classen for p-elementer som skal midtjusteres */
+p.center-text {
+    text-align: center;
 }
 
 a {
@@ -41,13 +69,53 @@ body {
     overflow-x: hidden;
     background-color: #121212;
 }
-.video-bilde{
-  display: block;
-margin-left: auto;
-margin-right: auto;
-max-width: 50%;
-border-radius: 20px;
+
+
+/*                                    Generelle elementer                                  */
+/* --------------------------------------------------------------------------------------- */
+/* Horisontale line breaks */
+hr {
+    height: 3px;
+    background-color: #62626230;
+    border: none;
+    border-radius: 50px;
 }
+
+.horizontal-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width:800px){
+    .horizontal-nav {
+        display: none;
+    }
+}
+.horizontal-nav div {
+    background-color: #d9bd09;
+    font-weight: 400;
+}
+
+/* Generelle semantiske elementer */
+header {
+    display: flex;
+    background-color: #d9bd09;
+    padding: 10px 20px;
+    padding-top: 0;
+    z-index: 1000;
+    /* Higher z-index to ensure it's on top */
+}
+
+.logo {
+
+    max-width: 150px;
+    max-height: 150px;
+}
+
+
 
 /* ------------------------------------------------------------------------------------------------- */
 /*                                       Responsiv nav-bar                                           */
@@ -198,76 +266,13 @@ nav a {
     background-color: #333;
     color: white;
   } */
-/*                                    Generelle elementer                                  */
+
+
+
+/*                                    main content felles                                          */
 /* --------------------------------------------------------------------------------------- */
-/* Horisontale line breaks */
-hr {
-    height: 3px;
-    background-color: #62626230;
-    border: none;
-    border-radius: 50px;
-}
 
-.horizontal-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin-top: auto;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-@media (max-width:800px){
-    .horizontal-nav {
-        display: none;
-    }
-}
-.horizontal-nav div {
-    background-color: #d9bd09;
-    font-weight: 400;
-}
 
-/* Generelle semantiske elementer */
-header {
-    display: flex;
-    background-color: #d9bd09;
-    padding: 10px 20px;
-    padding-top: 0;
-    z-index: 1000;
-    /* Higher z-index to ensure it's on top */
-}
-
-.logo {
-
-    max-width: 150px;
-    max-height: 150px;
-}
-
-h1 {
-    font-size: xx-large;
-    text-align: center;
-}
-
-/* .content h2 {
-    background-color: #a3a2a2;
-    padding: 2px;
-    border-radius: 7px;
-} */
-
-h3 {
-    font-size: larger;
-}
-
-p {
-    font-size: larger;
-    text-align: left;
-}
-
-/* Bruk denne classen for p-elementer som skal midtjusteres */
-p.center-text {
-    text-align: center;
-}
-
-/* ------------------------ main -----------*/
 
 /* Content-grid styling */
 .content-grid {
@@ -281,15 +286,6 @@ p.center-text {
     background-color: #121212;
 }
 
-/* venstre og høyre-margin style */
-/* .left-margin,
-.right-margin {
-    margin: 0;
-    padding: 0;
-} */
-
-/* Det meste går inni denne, den delen som er på midten av siden */
-
 @media (min-width: 700px){
 .content {
     max-width: 80%;
@@ -302,11 +298,7 @@ p.center-text {
 }
 }
 
-/* Grid styling */
-.table-content {
-    display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-}
+/* rutenett som brukes i index og activitetside */
 
 .inner-grid {
     display: grid;
@@ -318,10 +310,6 @@ p.center-text {
     /* Space between grid items */
 }
 
-.inner-grid p {
-    text-align: center;
-}
-
 .inner-grid div {
     /* background-color: #2E2E2E; */
     /* Bakgrunn kan muligens fjernes etterhvert */
@@ -330,6 +318,49 @@ p.center-text {
     /* Border for visual separation */
     border-radius: 10px;
 }
+
+.inner-grid p {
+    text-align: center;
+}
+
+
+
+
+/*                                    styling til index-siden                                        */
+/* --------------------------------------------------------------------------------------- */
+
+
+.video-bilde{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+    border-radius: 20px;
+}
+
+
+.informasjon-seksjon{
+    margin-top: 30px;
+    padding-bottom: 20px; 
+}
+
+.informasjon-seksjon ul{
+    color: white;
+    padding: 5px;  
+}
+
+.informasjon-seksjon ul li{
+    padding-top: 16px;
+}
+
+
+
+/* Grid styling hvor brukes denne?  */
+.table-content {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
 
 .inner-grid-spesialisering {
     display: grid;
@@ -357,6 +388,7 @@ p.center-text {
     border-radius: 15px;
     padding: 10px;
 }
+
 .Semester{
     font-size: large;
     margin-left:20px;
@@ -404,30 +436,13 @@ p.center-text {
 }
 
 
-.informasjon-seksjon{
-    margin-top: 30px;
-    padding-bottom: 20px;
-    
-}
-
-.informasjon-seksjon ul{
-    color: white;
-    padding: 5px;  
-}
-
-.informasjon-seksjon ul li{
-    padding-top: 16px;
-}
-
 #student-historier{
     width: 90%;
     background-color: #d9bd09;
-    display: flex;
-    
+    display: flex; 
 }
 
 @media (max-width: 700px) {
-    
     #student-historier{
         width: 100%;
         background-color: #d9bd09;
@@ -451,7 +466,7 @@ p.center-text {
 
 
 
-/*                                Styling for activity page + footer                                */
+/*                                Styling for activity page                        */
 /* --------------------------------------------------------------------------------------- */
 
 
@@ -655,8 +670,6 @@ table {
 }
 
 
-
-
 .a-section5{
     margin-top: 30px;
     background-color: #6d4b8d11;
@@ -668,7 +681,6 @@ table {
 }
 
 @media (max-width: 1000px){
-    
     .a-section5{
         margin-top: 30px;
         background-color: #6d4b8d11;
@@ -697,7 +709,8 @@ table {
 
 
 
-/*Her er styling for alt i footeren */
+/*                                Styling footer                        */
+/* --------------------------------------------------------------------------------------- */
 
 footer{
     margin-top: 90px;
