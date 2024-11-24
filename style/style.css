@@ -659,6 +659,10 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     overflow: hidden;
 }
 
+#student-historier div p{
+    color: #121212;
+}
+
 #student-historier div img{
     width: 100%; 
     height: 100%;
