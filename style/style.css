@@ -667,10 +667,11 @@ display: flex;
 
 }
 
-.informasjon-seksjon .andre-studier div{
-    border-top: 1px lightslategray;
+.andre-studier div{
+    border-top: 1px solid lightslategray;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
-
 
 
 
