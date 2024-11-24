@@ -782,14 +782,14 @@ table {
   }
 
 table caption {
-    font-size: 1.5em;        /* Gjør teksten større */
-    font-weight: bold;       /* Gjør teksten fet */
-    color: #333;             /* Setter tekstfarge */
-    text-align: center;      /* Sentrerer teksten */
-    margin-bottom: 10px;     /* Lager avstand under caption */
-    background-color: #f2f2f2; /* Setter bakgrunnsfarge */
-    padding: 10px;           /* Legger til polstring rundt teksten */
-    border-radius: 5px;      /* Gjør kantene runde */
+    font-size: 1.5em;       
+    font-weight: bold;       
+    color: #333;             
+    text-align: center;      
+    margin-bottom: 10px;     
+    background-color: #f2f2f2; 
+    padding: 10px;          
+    border-radius: 5px;      
 }
   
   th, td {
