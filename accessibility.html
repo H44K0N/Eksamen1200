@@ -16,7 +16,8 @@
 <body>
     <header>
         <img class="logo" src="media/logo-OsloMet.webp" alt="logo-OsloMet">
-        <nav class="horizontal-nav">
+        <!-- Fotograf: ukjent. Bilde hentet fra OsloMet.no -->
+        <nav aria-hidden="true" class="horizontal-nav">
             <a href="index.html">
                 <div>MatMod</div>
             </a>
@@ -31,21 +32,21 @@
             </a>
         </nav>
         <label class="hamburger-meny">
-            <input type="checkbox">
+            <input type="checkbox" aria-label="Navigasjonsmeny">
         </label>
         <aside class="sidebar">
-            <nav>
-                <a href="index.html">
-                    <div>MatMod</div>
+            <nav aria-label="hovedmeny">
+                <a class="nav-item" href="index.html" >
+               MatMod 
                 </a>
-                <a href="activity.html">
-                    <div>Aktivitet</div>
+                <a class="nav-item" href="activity.html">
+                Aktivitet
                 </a>
-                <a href="github.html">
-                    <div>GitHub</div>
+                <a class="nav-item" href="github.html">
+                GitHub
                 </a>
-                <a href="accessibility.html">
-                    <div>Tilgjengelighet</div>
+                <a class="nav-item" href="accessibility.html" aria-current="page">
+                Tilgjengelighet
                 </a>
             </nav>
         </aside>

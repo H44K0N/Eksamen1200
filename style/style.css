@@ -114,6 +114,23 @@ hr {
     max-width: 100%;
     overflow-x: hidden;
 }
+/* Style horisontal navigasjon (gjemt for screen-readers) */
+nav div {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: white;
+    color: #333;
+    transition: var(--animation-time);
+    text-align: center;
+}
+nav div:hover {
+    background-color: #d9bd09;
+    scale: 1.1;
+}
 @media (max-width:800px){
     .horizontal-nav {
         display: none;
@@ -261,9 +278,8 @@ aside::before {
 .hamburger-meny:has(input:checked)+.sidebar {
     translate: 0;
 }
-
-/* Style innsiden av nav-baren */
-nav div {
+/* Denne navigasjonen gjelder for screen readers */
+.nav-item{
     display: flex;
     flex-direction: column;
     font-size: xx-large;
@@ -271,12 +287,13 @@ nav div {
     padding: 10px;
     border-radius: 100px;
     background-color: white;
-    color: #333;
+/*important gjør at den ikke følger standard lenke-stil */
+    color: #333 !important;
     transition: var(--animation-time);
     text-align: center;
+    text-decoration: none; /* Fjern understreking */
 }
-
-nav div:hover {
+.nav-item:hover{
     background-color: #d9bd09;
     scale: 1.1;
 }

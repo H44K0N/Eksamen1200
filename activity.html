@@ -16,38 +16,39 @@
 <body>
   <header>
     <img class="logo" src="media/logo-OsloMet.webp" alt="logo-OsloMet">
-    <nav class="horizontal-nav">
-      <a href="index.html">
-        <div>MatMod</div>
-      </a>
-      <a href="activity.html">
-        <div>Aktivitet</div>
-      </a>
-      <a href="github.html">
-        <div>GitHub</div>
-      </a>
-      <a href="accessibility.html">
-        <div>Tilgjengelighet</div>
-      </a>
-    </nav>
-    <label class="hamburger-meny">
-      <input type="checkbox" aria-label="Navigasjonsmeny">
-    </label>
-    <aside class="sidebar">
-      <nav>
+    <!-- Fotograf: ukjent. Bilde hentet fra OsloMet.no -->
+    <nav aria-hidden="true" class="horizontal-nav">
         <a href="index.html">
-          <div>MatMod</div>
+            <div>MatMod</div>
         </a>
         <a href="activity.html">
-          <div>Aktivitet</div>
+            <div>Aktivitet</div>
         </a>
         <a href="github.html">
-          <div>GitHub</div>
+            <div>GitHub</div>
         </a>
         <a href="accessibility.html">
-          <div>Tilgjengelighet</div>
+            <div>Tilgjengelighet</div>
         </a>
-      </nav>
+    </nav>
+    <label class="hamburger-meny">
+        <input type="checkbox" aria-label="Navigasjonsmeny">
+    </label>
+    <aside class="sidebar">
+        <nav aria-label="hovedmeny">
+            <a class="nav-item" href="index.html" >
+           MatMod 
+            </a>
+            <a class="nav-item" href="activity.html" aria-current="page">
+            Aktivitet
+            </a>
+            <a class="nav-item" href="github.html">
+            GitHub
+            </a>
+            <a class="nav-item" href="accessibility.html">
+            Tilgjengelighet
+            </a>
+        </nav>
     </aside>
 </header>
 
