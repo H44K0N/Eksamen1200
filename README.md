@@ -32,6 +32,7 @@ kildeføre bilder, og finne ut hvor vi skal gjøre det
 
 
 Legge til en main i alle sider hvor alt av innhold skal. Typ det som nå er content elns. 
+- **Gjort**	
 
 Bruke article og section inne i article i stedet for div?? 
 
@@ -51,6 +52,7 @@ Lag felles klasser for bilder (str osv).
 
 
 Site follows the guidelines from W3C WAI closely
+https://www.w3.org/WAI/test-evaluate/preliminary/
 
 Legge til data i tabels for å få den accessible. (Se tengels pp om tables)
 - **Gjort**
