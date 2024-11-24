@@ -1005,3 +1005,13 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     object-fit: cover;
     display: inside;
 }
+
+.punktliste1 {
+        margin: 0;
+        padding-left: 40px;
+        list-style: disc;
+    }
+
+.punktliste1 li {
+    margin-bottom: 10px;
+}
