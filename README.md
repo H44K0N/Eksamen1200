@@ -21,9 +21,6 @@ https://www.youtube.com/watch?v=G3e-cpL7ofc
 **------Struktur----------------------------------------------------**
 
 
-Kommentere kode i css, html for alle semantikse elementer og evt annen kode. /
-- **Gjort**  for css activity og footer. 
-
 Liste av contents i toppen av css
 - **Gjort**	
 
@@ -34,10 +31,13 @@ kildeføre bilder, og finne ut hvor vi skal gjøre det
 Legge til en main i alle sider hvor alt av innhold skal. Typ det som nå er content elns. 
 - **Gjort**	
 
-Bruke article og section inne i article i stedet for div?? 
-
 Bruke klasser i stedet for id. (PP selectors sier at id er for js).
 - **Gjort**
+
+Kommentere kode i css, html for alle semantikse elementer og evt annen kode./
+- **Nesten Gjort** for css activity og footer. Mangler en del
+
+Bruke article og section inne i article i stedet for div?? 
 
 sjekke navn til klasser osv har nokså lik stil
 
@@ -66,10 +66,6 @@ Teste nettsidene med lighthouse sin , ikke tall, men tilbakemeldinger
 Teste koden med screen-readers?? 
 - **Gjort** på Activity. Testet med apple sin. 	
 
-Legge inn bilder av de automatikse testene?
-Ikke gjort!
-
-
 Skriv om at vi har gjort bruker test på begge sidene? Se s45 på pp accsessobility	
 - **Gjort**
 
@@ -80,12 +76,17 @@ Skrive teksten om accesibility
 - **Gjort**
 
 
+Legge inn bilder av de automatikse testene?
+Ikke gjort!!
+
+
 
 **------Annet----------------------------------------------------**
 
 Fikse/kode valgfagene til "studiets oppbygging	
-
+- **Snart jort!**
 Skrive om sammarbeid i github (se eksamensoppgaven)
+- **Snart jort!**
 	
 
 

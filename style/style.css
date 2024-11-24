@@ -863,7 +863,7 @@ Boksene er også satt til: display: flex, for å kunne midtsentrere elementer.*/
 
 /* Seksjon som inneholder tabele. */
 
-.a-dager-klatres-seksjon {
+.a-dager-klatres-article {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -1000,14 +1000,12 @@ ta opp lik mengde tilgjenlig plass. */
     margin-top: 20px;
 }
 
-
 /* Seksjon for artikel-rutenettet. Den er satt til å være grid, med 3 like store bokser på
 på hver rad, som også skalerer seg etter skjermens størrelse. 
  */
 
-.a-section5{
+.relevante-artikler-grid{
     margin-top: 30px;
-    background-color: #6d4b8d11;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
@@ -1018,9 +1016,8 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 /* Endrer antall bokser per rad fra 3 til 2 når den vises på mindre skjerm.*/
 
 @media (max-width: 1000px){
-    .a-section5{
+    .relevante-artikler-grid{
         margin-top: 30px;
-        background-color: #6d4b8d11;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
@@ -1029,7 +1026,7 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     } 
 }
 
-.a-section5 div{
+.relevante-artikler-grid div{
     background-color: #333;
     padding-bottom: 20px;
     border-radius: 15px;
