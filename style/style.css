@@ -1064,6 +1064,8 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     margin-bottom: 10px;
 }
 
+/* Henter section klasse fra aktivitetssiden og gjør unik for oppsett til GitHub-siden. */
+
 .git-seksjon {
     width: 100%;
     margin-top: 40px;
@@ -1071,9 +1073,6 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     justify-content: space-between;
     padding-bottom: 20px;
 }
-
-/* Stabbler boksene oppå hverandre, med flex-direction: column,
- for å vising på mindre skjerm.   */
 
 @media (max-width: 1000px){
     .git-seksjon {
@@ -1086,21 +1085,15 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     }
 }
 
-
-/* Justerer alle (begge) div-boksene i den spesefikke seksjonen. til å 
-ta opp lik mengde tilgjenlig plass. */
-
 .git-seksjon div{
     flex: 1;   
     margin-left: 10px;
     margin-right: 10px;
-    height: 580px;
+    height: auto;
     background-color: #333;
     border-radius: 15px;
     overflow: auto;
 }
-
-
 
 .git-seksjon h2{
     margin-top: 40px;
