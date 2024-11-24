@@ -686,6 +686,7 @@ display: flex;
     width: 90%;
     border: 2px solid rgb(189, 189, 189); 
     display: flex;
+    border-radius: 15px;
 
 }
 
@@ -712,6 +713,7 @@ display: flex;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
+        padding: 15px;
         
     }
  }
