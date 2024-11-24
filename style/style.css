@@ -1,6 +1,23 @@
 
 
 
+/* innholdsfortegnelse */
+
+/* Felles */
+    /* Genrelle fonter  */
+    /* Felles elementer */
+    /* Header */
+    /* Main content layout */
+    /* Footer */ 
+    
+/* Individuell */    
+    /* styling til index-siden */
+    /* styling til activity-siden */
+    /* styling til GitHub-siden */
+    /* styling til Accessibility-siden */
+
+
+
 
 
 
@@ -60,6 +77,10 @@ a:active {
     color: #40f5ff;
 }
 
+
+/*                                    Generelle elementer                                  */
+/* --------------------------------------------------------------------------------------- */
+
 /* Fjerner standard margins */
 html,
 body {
@@ -71,8 +92,6 @@ body {
 }
 
 
-/*                                    Generelle elementer                                  */
-/* --------------------------------------------------------------------------------------- */
 /* Horisontale line breaks */
 hr {
     height: 3px;
@@ -80,6 +99,11 @@ hr {
     border: none;
     border-radius: 50px;
 }
+
+
+/*                                    header                                   */
+/* --------------------------------------------------------------------------------------- */
+
 
 .horizontal-nav {
     display: flex;
@@ -99,7 +123,6 @@ hr {
     font-weight: 400;
 }
 
-/* Generelle semantiske elementer */
 header {
     display: flex;
     background-color: #d9bd09;
@@ -110,7 +133,6 @@ header {
 }
 
 .logo {
-
     max-width: 150px;
     max-height: 150px;
 }
@@ -262,14 +284,8 @@ nav a {
     text-decoration: none;
 }
 
-/*   nav div a:hover{
-    background-color: #333;
-    color: white;
-  } */
 
-
-
-/*                                    main content felles                                          */
+/*                                    main content layout felles                            */
 /* --------------------------------------------------------------------------------------- */
 
 
@@ -325,6 +341,186 @@ nav a {
 
 
 
+/*                                Styling footer                        */
+/* --------------------------------------------------------------------------------------- */
+
+/* felles footer for alle sidene. */
+
+footer{
+    margin-top: 90px;
+    width: 100%;
+    background-color: #333;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    padding:15px;
+}
+
+/* Oppretter en div boks som vi kan sette til en flexbox for
+ å midtsentrere innholdet  */
+.sub-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Her er footerns "header" (kanppen til nyhetsbrevet osv) */
+.footer-headline{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    align-items: flex-start;
+}
+
+/* justerer footerens layout for 
+mindre skjermer: Stabbler elementer vertikalt og til venstre.  */
+@media (max-width: 800px){
+    .footer-headline{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 10px;
+        align-items: flex-start;
+        } 
+    } 
+
+ /* Vi har opprettet tre div-bokser inne i footeren sin "heading". En 
+ venstrdel som inneholder en overskrfit, en midtdel som nå er tom, men hvor man kan legge til ting
+ senere, og en høyre del som inneholder en knapp. Når vi setter flex: 1, flex: 2, flex: 4, osv. i en
+  flexbox-layout, bestemmer vi hvor mye plass hvert element skal ta i forhold til de andre elementene. Dette er gjort
+  for at den skal bli mest mulig skalerbar når man juster størrelse på siden. */
+
+.footer-headline-left{
+    flex: 4;
+}
+
+.footer-headline-left h2{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.footer-headline-mid{
+    flex: 1;
+}
+
+.footer-headline-rigth{
+    display: flex;
+    justify-content: center;
+    flex: 3;  
+}
+
+.footer-headline-rigth p{
+    color: black;
+}
+
+.btn-abonner-nyhetsbrev{
+    margin-top: 20px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px #1E1E1E;
+    transition: 200ms ease-in-out;
+}
+
+.btn-abonner-nyhetsbrev:hover{
+    scale: 1.1;
+    background-color: #d9bd09;
+}
+
+/*Her kommer hoveddelen av footeren, som også består av tre vertikale flex-bokser */
+
+.footer-main{
+    margin-top: 30px;
+    display: flex;
+    border-top: 2px solid white;    
+}
+
+/* Justerer footers main content layout til 
+mindre skjermer: stabbler elementer verstikalt. 
+*/
+
+@media (max-width: 800px){
+    .footer-main{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid white;
+    } 
+} 
+
+
+.footer-main ul{
+    color: white;
+    padding: 5px;
+    list-style: none;  
+}
+
+.footer-main ul li{
+    padding-top: 16px;
+}
+
+.footer-main h3{
+    margin-top: 0px;
+}
+
+.footer-main-left{
+    margin-top: 30px;
+    flex: 1; 
+}
+
+/* Bruker nested flexbox teknikk for å kunne manipulere plassering til elemnter inni containeren.
+i dette tilfellet  */
+.footer-main-middle{
+    margin-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+/* Justerer midt-konteineren i footers-main content layout for 
+mindre skjermer: Stabbler elementer til venstre i stedet for høyre. 
+*/
+@media (max-width: 800px){
+    
+.footer-main-middle{
+    margin-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+} 
+
+.footer-main-rigth{
+    margin-top: 30px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Justerer høyre container i footerenss-main content layout for 
+mindre skjermer: Stabler elementer til venstre i stedet for i midten. 
+*/
+@media (max-width: 800px){            
+.footer-main-rigth{
+    margin-top: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+} 
+
+
+
+
 
 /*                                    styling til index-siden                                        */
 /* --------------------------------------------------------------------------------------- */
@@ -338,6 +534,8 @@ nav a {
     border-radius: 20px;
 }
 
+
+/* Styling som brukes til flere seksjoner*/
 
 .informasjon-seksjon{
     margin-top: 30px;
@@ -470,19 +668,20 @@ nav a {
 /* --------------------------------------------------------------------------------------- */
 
 
-#klatre-bilde-boks{
+.klatre-bilde-boks{
     width: 100%;
     height: 500px;
     overflow: hidden;
     margin-bottom: 30px;
 }
 
-#klatre-bilde {
+.klatre-bilde {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* seksjon besåtende av to horrisontale bokser, gjennom å bruke flex.   */
 .a-påmelding-seksjon {
     margin-top: 30px;
     display: flex;
@@ -490,6 +689,8 @@ nav a {
     justify-content: space-between;
 }
 
+/* Endrer retningen slik at de to divboksene kommer ovenfor hverandre når
+ den vises på en skjermstørrelse som er 700px eller mindre. */
 @media (max-width: 700px){
     .a-påmelding-seksjon {
         margin-top: 30px;
@@ -499,6 +700,11 @@ nav a {
         justify-content: space-between;
     }
 }
+
+/*Venstre og høyre divboks er stt til å være flex: 1 som gjør at de tar
+opp like stor andel av tilgjenlg plass innefor sitt foreldreelement, samtidig
+som det får en fleksibel størrelse som tilpasser seg ettersom siden skalerer.
+Boksene er også satt til: display: flex, for å kunne midtsentrere elementer.*/
 
 .a-left-div {
     margin-right: 10px;
@@ -556,6 +762,7 @@ nav a {
     object-fit: cover;
 }
 
+/* Seksjon som inneholder tabele. */
 
 .a-dager-klatres-seksjon {
     margin-top: 30px;
@@ -591,7 +798,6 @@ table {
     color: black;
   }
   
-
   .tekst-boks-farge{
     color: black;
     background-color: white;
@@ -619,6 +825,7 @@ table {
     }
 }
 
+/* Ny seksjon som lager en layput med to horisontale bokser  */
 
 .a-hvorfor-klatre-seksjon{
     width: 100%;
@@ -628,6 +835,8 @@ table {
     padding-bottom: 20px;
 }
 
+/* Stabbler boksene oppå hverandre, med flex-direction: column,
+ for å vising på mindre skjerm.   */
 
 @media (max-width: 1000px){
     .a-hvorfor-klatre-seksjon {
@@ -640,6 +849,10 @@ table {
     }
 }
 
+
+/* Justerer alle (begge) div-boksene i den spesefikke seksjonen. til å 
+ta opp lik mengde tilgjenlig plass. */
+
 .a-hvorfor-klatre-seksjon div{
     flex: 1;   
     margin-left: 10px;
@@ -648,6 +861,8 @@ table {
     background-color: #333;
     border-radius: 15px;
 }
+
+
 
 .a-hvorfor-klatre-seksjon h2{
     margin-top: 40px;
@@ -671,6 +886,16 @@ table {
     
 }
 
+.overskriftboks{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+/* Seksjon for artikel-rutenettet. Den er satt til å være grid, med 3 like store bokser på
+på hver rad, som også skalerer seg etter skjermens størrelse. 
+ */
 
 .a-section5{
     margin-top: 30px;
@@ -681,6 +906,8 @@ table {
     row-gap: 55px;
     justify-content: space-between;
 }
+
+/* Endrer antall bokser per rad fra 3 til 2 når den vises på mindre skjerm.*/
 
 @media (max-width: 1000px){
     .a-section5{
@@ -710,187 +937,6 @@ table {
 
 
 
-
-/*                                Styling footer                        */
-/* --------------------------------------------------------------------------------------- */
-
-footer{
-    margin-top: 90px;
-    width: 100%;
-    background-color: #333;
-    padding-bottom: 30px;
-    border-radius: 20px;
-    padding:15px;
-}
-
-/* Oppretter en div boks som vi kan sette til en flexbox for
- å midtsentrere innholdet  */
-.sub-footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
-}
-
-/*Her er footerns "header" (kanppen til nyhetsbrevet osv) */
-.footer-headline{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-    align-items: flex-start;
-}
-
-/* Adjust footer layout for 
-smaller screens: stack items vertically and align to the left.  */
-@media (max-width: 800px){
-    .footer-headline{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        column-gap: 10px;
-        align-items: flex-start;
-        } 
-    } 
-
- /* Vi har opprettet tre div-bokser inne i footeren sin "heading". En 
- venstrdel som inneholder en overskrfit, en midtdel som nå er tom, men hvor man kan legge til ting
- senere, og en høyre del som inneholder en knapp. Når vi setter flex: 1, flex: 2, flex: 4, osv. i en
-  flexbox-layout, bestemmer vi hvor mye plass hvert element skal ta i forhold til de andre elementene. Dette er gjort
-  for at den skal bli mest mulig skalerbar når man juster størrelse på siden. */
-
-.footer-headline-left{
-    flex: 4;
-}
-
-.footer-headline-left h2{
-    font-size: 30px;
-    margin-left: 10px;
-}
-
-.footer-headline-mid{
-    flex: 1;
-}
-
-.footer-headline-rigth{
-    display: flex;
-    justify-content: center;
-    flex: 3;  
-}
-
-.footer-headline-rigth p{
-    color: black;
-}
-
-.btn-abonner-nyhetsbrev{
-    margin-top: 20px;
-    font-size: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 25px;
-    padding-right: 25px;
-    cursor: pointer;
-    border-radius: 20px;
-    border: 3px #1E1E1E;
-    transition: 200ms ease-in-out;
-}
-
-.btn-abonner-nyhetsbrev:hover{
-    scale: 1.1;
-    background-color: #d9bd09;
-}
-
-/*Her kommer hoveddelen av footeren, som også består av tre vertikale flex-bokser */
-
-.footer-main{
-    margin-top: 30px;
-    display: flex;
-    border-top: 2px solid white;    
-}
-
-/* Adjust footers main content layout for 
-smaller screens: stack items vertically. 
-*/
-
-@media (max-width: 800px){
-    .footer-main{
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        border-top: 2px solid white;
-    } 
-} 
-
-/* Endrer tekstfargen i listen, og legger til innvendig
- mellomrom (padding), og fjerner punktmerkene (bullet points) 
- fra listen. 
- */
-
-.footer-main ul{
-    color: white;
-    padding: 5px;
-    list-style: none;  
-}
-
-.footer-main ul li{
-    padding-top: 16px;
-}
-
-.footer-main h3{
-    margin-top: 0px;
-}
-
-.footer-main-left{
-    margin-top: 30px;
-    flex: 1; 
-}
-
-/* Bruker nested flexbox teknikk for å kunne manipulere plassering til elemnter inni containeren.
-i dette tilfellet  */
-.footer-main-middle{
-    margin-top: 30px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
-/* Adjust miidle container in the footers-main content layout for 
-smaller screens: stack items to the start (left) in sted of rigth. 
-*/
-@media (max-width: 800px){
-    
-.footer-main-middle{
-    margin-top: 30px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-} 
-
-.footer-main-rigth{
-    margin-top: 30px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-/* Adjust rigth container in the footers-main content layout for 
-smaller screens: stack items to the start (left) in sted of to the centre. 
-*/
-     @media (max-width: 800px){
-            
-        .footer-main-rigth{
-            margin-top: 30px;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        } 
 
 
     
