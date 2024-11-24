@@ -642,74 +642,93 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
 display: flex;
 }
 
+.faglig-leder-informasjon{
+    display: flex;
+    width: 60%;
+    column-gap: 10px;
+    border-top: 1px solid gray; 
+    border-bottom: 1px solid gray;
+}
 
-#student-historier{
+.faglig-leder-bilde-boks{
+    flex: 1; 
+    height: 150px; 
+}
+
+.faglig-leder-tekst-boks{
+    flex: 4;
+    height: 150px; 
+}
+
+
+
+
+.boks1{
+    display: flex;
+    justify-content: center; 
+    margin-top: 40px;
+}
+
+.boks2{
+    width: 90%;
+    border: 2px solid rgb(189, 189, 189); 
+    display: flex;
+
+}
+
+.boks3{
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+}
+
+
+.student-historier{
     width: 90%;
     background-color: #d9bd09;
     display: flex;
-    border-radius: 15px;
-    padding: 20px;
+   /* border-radius: 15px; */
+   
 }
 
 @media (max-width: 700px) {
-    #student-historier{
+    .student-historier{
         width: 100%;
         background-color: #d9bd09;
         display: flex;
         flex-direction: column;
         border-radius: 15px;
-        padding: 15px;
+        
     }
  }
 
-#student-historier div{
+.student-historier div{
     flex: 1;
     column-gap: 10px;
     overflow: hidden;
-    margin: 0 10px;
 }
 
-#student-historier div h2{
+.student-historier div h2{
     color: #1b1b1b;
 }
 
-#student-historier div p{
+.student-historier div p{
     color: #1b1b1b;
 }
 
 
-#student-historier div a{
+.student-historier div a{
     color: #242323;
     text-decoration: underline;
     font-weight: bold;
 }
 
-#student-historier div img{
+.boks3 img{
     width: 100%; 
     height: 100%;
     display: block;
     object-fit: cover;
-    border-radius: 15px;
 }
-
-
-.boks1{
-    display: flex;
-    width: 60%;
-    border-top: 1px solid gray; 
-    border-bottom: 1px solid gray;
-}
-
-.boks2{
-    flex: 1; 
-    height: 150px; 
-}
-
-.boks3{
-    flex: 4;
-    height: 150px; 
-}
-
 
 
 /*                                Styling for activity page                        */
