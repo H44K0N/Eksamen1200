@@ -680,7 +680,7 @@ display: flex;
 
 .boks2{
     width: 90%;
-    border: 2px solid rgb(189, 189, 189); 
+   /* border: 2px solid rgb(189, 189, 189); */
     display: flex;
     border-radius: 15px;
     padding-left: 20px;
