@@ -1061,3 +1061,55 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 .punktliste1 li {
     margin-bottom: 10px;
 }
+
+.git-seksjon {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* Stabbler boksene oppå hverandre, med flex-direction: column,
+ for å vising på mindre skjerm.   */
+
+@media (max-width: 1000px){
+    .git-seksjon {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Justerer alle (begge) div-boksene i den spesefikke seksjonen. til å 
+ta opp lik mengde tilgjenlig plass. */
+
+.git-seksjon div{
+    flex: 1;   
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 580px;
+    background-color: #333;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+
+
+.git-seksjon h2{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.git-seksjon p{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
