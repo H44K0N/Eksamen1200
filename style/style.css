@@ -677,6 +677,22 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
 }
 
 
+.boks1{
+    display: flex;
+    width: 60%;
+    border-top: 1px solid gray; 
+    border-bottom: 1px solid gray;
+}
+
+.boks2{
+    flex: 1; 
+    height: 150px; 
+}
+
+.boks3{
+    flex: 4;
+    height: 150px; 
+}
 
 
 
