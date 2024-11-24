@@ -88,7 +88,7 @@
                         Hele nettstedet kan navigeres kun ved hjelp av tastatur, noe som er viktig for brukere som ikke kan bruke mus. Interaktive elementer som lenker, knapper og skjemaer har tydelig definerte fokusstiler, slik at det er lett å identifisere hvor man befinner seg under navigasjonen.</p>
                         
                         <p>Tilpasninger for skjermlesere <br>
-                        Vi har implementert ARIA (Accessible Rich Internet Applications) for å gjøre det lettere for skjermlesere å få tilgang til interaktive elementer som menyer og skjemaer. Alt innhold, inkludert bilder og multimedia, er utstyrt med alternativ tekst (alt-tekst) som beskriver innholdet.</p>
+                        Vi har implementert ARIA (Accessible Rich Internet Applications) for å gjøre det lettere for skjermlesere å få tilgang til interaktive elementer som menyer og skjemaer. Alt innhold, inkludert bilder og multimedia, er utstyrt med alternativ tekst (alt-tekst) som beskriver innholdet, og ved bruk av tabels har vi lagt til caption i tabellen og et systematisk bruk av "th>"" tagger med scope-attributtet for å gjøre innholdet tydelig for skjermlesere.</p>
                         
                         <p>Responsivt og tilpasningsdyktig design <br>
                         Nettsiden vår er designet for å fungere på alle skjermstørrelser og enheter. Det er mulig å zoome inn og ut uten at innholdet forvrenges. Vi har også sørget for at nettsiden fungerer like godt på små mobile enheter som på store skjermer.</p>
@@ -103,31 +103,9 @@
                 <p>
                     Vi har brukt automatiserte tester som W3C Markup Validation Service og Accesibilitychecker.org for å sjekke kvaliteten på koden vår.<br> Disse testene har hjulpet oss med å identifisere og løse problemer med tilgjengelighet, som utilstrekkelig fargekontrast og manglende alternativ tekst for bilder. Vi har også gjennomført manuell testing for å sikre at nettstedet fungerer godt for alle brukere.
                 </p>
-            </section>
-
-            <section>
-                <h2>tiltak vi har gjort for å lage nettsiden accessible</h2>
-                <p> 
-                    Vi har fulgt x sine standarder og passet på at alle semantikse elementer
-                    inneholder de dataene de trenger for at svaksynte skal kunne navigere siden med screenreaders.
-                </p>
-                <p>
-                    I table-elemtnetet la vi til en caption for at leseren skal vite hva tabellen er om. Videe 
-                    passet vi på at vi kommuniserete til webbrowseren hva som var table -row, eller table -column overskrifter gjennom
-                    meke de med taggen th. Dette er veldig viktig når screenreaderen skal lese opp til brukeren. 
-                    Men vi tok steget videre og la til metadata for hva hver header celle er for. Dette gjorde vi med scope, hvor hvert th element fikk en scope. 
-                    I dette tilfellet ble det dagoverskriftene col (column) fordi overskriften brukes på cellene i samme kolonne, mens for de ulike Klokkeslettene ble det row. 
-                </p>
-                <p> Alle bilder fikk en Alt-tekst som hjelper synshemmede brukere som bruker skjermlesere til å forstå hva bildet representerer. Screenreaderen leser opp alt-teksten,
-                    slik at de skjønner hva bildet er av. Det hjelper også på søkemotoroptimalisering (SEO), slik at man kan nå ut til flere,
-                </p>
-
-                <p>Vi har testet alle sider med apple sin screenreaders og det har fungert
-                    tilstreklig. 
-                </p>
-
-                <p>Vi har brukt heading tagene på en hensiksmessig måte også men hensyn til accessebility</p>
-                <p>Vi satte navnet til studiet over videoen av hensyn til scrrenreaders, slik at det blir lest opp før det andre</p>
+           
+             
+            
 
 
 
