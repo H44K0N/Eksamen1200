@@ -780,6 +780,17 @@ table {
     width: 80%;
     border-collapse: collapse;
   }
+
+table caption {
+    font-size: 1.5em;        /* Gjør teksten større */
+    font-weight: bold;       /* Gjør teksten fet */
+    color: #333;             /* Setter tekstfarge */
+    text-align: center;      /* Sentrerer teksten */
+    margin-bottom: 10px;     /* Lager avstand under caption */
+    background-color: #f2f2f2; /* Setter bakgrunnsfarge */
+    padding: 10px;           /* Legger til polstring rundt teksten */
+    border-radius: 5px;      /* Gjør kantene runde */
+}
   
   th, td {
     border: 1px solid #ddd;
