@@ -543,6 +543,7 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
 .h2-Bachelorprogram{
     text-align: center;
 }
+
 /* Styling som brukes til flere seksjoner*/
 
 .informasjon-seksjon{
@@ -561,7 +562,6 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
 
 
 
-/* Grid styling hvor brukes denne?  */
 .table-content {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
@@ -701,6 +701,7 @@ display: flex;
     background-color: #d9bd09;
     display: flex;
     border-radius: 15px;
+    padding: 20px;
    
 }
 
