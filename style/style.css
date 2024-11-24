@@ -663,6 +663,16 @@ display: flex;
 }
 
 
+.andre-studier{
+
+}
+
+.informasjon-seksjon .andre-studier div{
+    border-top: 1px lightslategray;
+}
+
+
+
 
 
 .boks1{
@@ -731,6 +741,7 @@ display: flex;
     display: block;
     object-fit: cover;
 }
+
 
 
 /*                                Styling for activity page                        */

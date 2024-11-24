@@ -58,8 +58,10 @@ Legge til data i tabels for å få den accessible. (Se tengels pp om tables)
 - **Gjort**
 
 Teste nettsidene med lighthouse sin , ikke tall, men tilbakemeldinger
+- **Gjort**
 
-Teste koden med screen-readers?? (Ikke sikkert nødvendig, men kan være et pluss) 
+
+Teste koden med screen-readers?? 
 - **Gjort** på Activity. Testet med apple sin. 	
 
 Skriv om at vi har gjort bruker test på begge sidene? Se s45 på pp accsessobility	
@@ -74,7 +76,8 @@ Skrive teksten om accesibility
 
 Fikse/kode valgfagene til "studiets oppbygging	
 
-Skrive om sammarbeid i github (se eksamensoppgaven)	
+Skrive om sammarbeid i github (se eksamensoppgaven)
+	
 
 
 
