@@ -54,6 +54,8 @@ Lag felles klasser for bilder (str osv).
 Site follows the guidelines from W3C WAI closely
 https://www.w3.org/WAI/test-evaluate/preliminary/
 
+- **Gjort**
+
 Legge til data i tabels for å få den accessible. (Se tengels pp om tables)
 - **Gjort**
 
@@ -67,12 +69,15 @@ Teste koden med screen-readers??
 Legge inn bilder av de automatikse testene?
 Ikke gjort!
 
-Skriv om at vi har gjort bruker test på begge sidene? Se s45 på pp accsessobility	
 
-Test nettsiden manuellet for accessibility Se s45 på pp accsessobility	
+Skriv om at vi har gjort bruker test på begge sidene? Se s45 på pp accsessobility	
+- **Gjort**
+
+Test nettsiden manuellet for accessibility Se s45 på pp accsessobility
+- **Gjort**
 
 Skrive teksten om accesibility 
-- **Gjort**????????????
+- **Gjort**
 
 
 
