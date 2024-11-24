@@ -68,7 +68,7 @@ a {
     color: #ffffff;
     text-decoration: none;
     text-decoration: underline #d9bd09;
-    text-decoration-thickness: 2.5px;
+    text-decoration-thickness: 2px;
 }
 
 a:visited {
