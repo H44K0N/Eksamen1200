@@ -27,7 +27,9 @@ Kommentere kode i css, html for alle semantikse elementer og evt annen kode. /
 Liste av contents i toppen av css
 - **Gjort**	
 
-kildeføre bilder, og finne ut hvor vi skal gjøre det	
+kildeføre bilder, og finne ut hvor vi skal gjøre det
+- **Gjort**		
+
 
 Legge til en main i alle sider hvor alt av innhold skal. Typ det som nå er content elns. 
 
@@ -71,6 +73,8 @@ Skrive teksten om accesibility
 Fikse/kode valgfagene til "studiets oppbygging	
 
 Skrive om sammarbeid i github (se eksamensoppgaven)	
+
+
 
 
 	
