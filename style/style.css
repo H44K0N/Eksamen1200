@@ -951,7 +951,7 @@ table caption {
 /* Justerer alle (begge) div-boksene i den spesefikke seksjonen. til å 
 ta opp lik mengde tilgjenlig plass. */
 
-.a-hvorfor-klatre-article div{
+.a-hvorfor-klatre-article section{
     flex: 1;   
     margin-left: 10px;
     margin-right: 10px;
@@ -959,8 +959,6 @@ ta opp lik mengde tilgjenlig plass. */
     background-color: #333;
     border-radius: 15px;
 }
-
-
 
 .a-hvorfor-klatre-article h2{
     margin-top: 40px;
