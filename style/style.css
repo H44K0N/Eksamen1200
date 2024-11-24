@@ -51,11 +51,7 @@ h3 {
 p {
     font-size: larger;
     text-align: left;
-<<<<<<< Updated upstream
     color: #d4d4d4;
-=======
-    color: #dfdede;
->>>>>>> Stashed changes
     max-width: 1000px;
 }
 li{
@@ -962,9 +958,20 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 /*                                Styling for GitHub side                                */
 /* --------------------------------------------------------------------------------------- */
 
-#gitcommit1 {
-    margin: 10px;
-    width: 800px;
-    height: 600px;
+.gitcommit1 {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: inside;
+}
 
+.gitcommit2 {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    display: inside;
 }
