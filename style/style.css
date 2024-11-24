@@ -538,7 +538,9 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     border-radius: 20px;
 }
 
-
+.h2-Bachelorprogram{
+    text-align: center;
+}
 /* Styling som brukes til flere seksjoner*/
 
 .informasjon-seksjon{
