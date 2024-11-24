@@ -1016,6 +1016,14 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 /*                                Styling for GitHub side                                */
 /* --------------------------------------------------------------------------------------- */
 
+.git-undertekst {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .gitcommit1 {
     width: 100%;
     height: auto;
