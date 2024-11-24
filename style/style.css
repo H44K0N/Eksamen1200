@@ -51,6 +51,7 @@ p {
 li{
     color: #dfdede;
     font-size: larger;
+    margin-left: 20px;
 }
 
 /* Bruk denne classen for p-elementer som skal midtjusteres */
