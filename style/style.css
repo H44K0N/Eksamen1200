@@ -664,8 +664,19 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     margin: 0 10px;
 }
 
+#student-historier div h2{
+    color: #1b1b1b;
+}
+
 #student-historier div p{
-    color: #121212;
+    color: #1b1b1b;
+}
+
+
+#student-historier div a{
+    color: #242323;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #student-historier div img{
