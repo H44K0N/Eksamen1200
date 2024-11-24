@@ -55,7 +55,7 @@ li{
 }
 
 /* Bruk denne classen for p-elementer som skal midtjusteres */
-p.center-text {
+.center-text {
     text-align: center;
 }
 
