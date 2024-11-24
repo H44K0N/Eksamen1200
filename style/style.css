@@ -755,14 +755,14 @@ display: flex;
 /* --------------------------------------------------------------------------------------- */
 
 
-.klatre-bilde-boks{
+.introduksjons-seksjon-bilde-contener{
     width: 100%;
     height: 500px;
     overflow: hidden;
     margin-bottom: 30px;
 }
 
-.klatre-bilde {
+.a-bilde1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -793,7 +793,7 @@ opp like stor andel av tilgjenlg plass innefor sitt foreldreelement, samtidig
 som det får en fleksibel størrelse som tilpasser seg ettersom siden skalerer.
 Boksene er også satt til: display: flex, for å kunne midtsentrere elementer.*/
 
-.a-left-div {
+.a-left-section {
     margin-right: 10px;
     height: 400px;
     flex: 1;
@@ -805,7 +805,7 @@ Boksene er også satt til: display: flex, for å kunne midtsentrere elementer.*/
     border-radius: 10px;
 }
 
-.a-rigth-div {
+.a-rigth-section {
     margin-left: 10px;
     height: 400px;
     flex: 1;
@@ -925,7 +925,7 @@ table caption {
 
 /* Ny seksjon som lager en layput med to horisontale bokser  */
 
-.a-hvorfor-klatre-seksjon{
+.a-hvorfor-klatre-article{
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -937,7 +937,7 @@ table caption {
  for å vising på mindre skjerm.   */
 
 @media (max-width: 1000px){
-    .a-hvorfor-klatre-seksjon {
+    .a-hvorfor-klatre-article {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -951,7 +951,7 @@ table caption {
 /* Justerer alle (begge) div-boksene i den spesefikke seksjonen. til å 
 ta opp lik mengde tilgjenlig plass. */
 
-.a-hvorfor-klatre-seksjon div{
+.a-hvorfor-klatre-article div{
     flex: 1;   
     margin-left: 10px;
     margin-right: 10px;
@@ -962,14 +962,14 @@ ta opp lik mengde tilgjenlig plass. */
 
 
 
-.a-hvorfor-klatre-seksjon h2{
+.a-hvorfor-klatre-article h2{
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.a-hvorfor-klatre-seksjon p{
+.a-hvorfor-klatre-article p{
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
