@@ -1053,6 +1053,11 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     display: inside;
 }
 
+.git-bildetekst {
+    padding-top: 100px;
+    text-align: center;
+}
+
 .punktliste1 {
         margin: 0;
         padding-left: 40px;
