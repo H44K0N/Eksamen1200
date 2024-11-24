@@ -710,7 +710,6 @@ display: flex;
     background-color: #d9bd09;
     display: flex;
     border-radius: 15px;
-    padding: 20px;
    
 }
 
@@ -749,7 +748,6 @@ display: flex;
     text-decoration: underline;
     font-weight: bold;
     margin-left: 10px;
-    margin-top: 10px;
 }
 
 .boks3 img{
