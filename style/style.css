@@ -65,20 +65,22 @@ p.center-text {
 }
 
 a {
-    color: #5edde4;
+    color: #ffffff;
     text-decoration: none;
+    text-decoration: underline #d9bd09;
+    text-decoration-thickness: 2.5px;
 }
 
 a:visited {
-    color: #6d4b8d;
+    color: #a08b06;
 }
 
 a:hover {
-    color: #13f0fc;
+    color: #d9bd09;
 }
 
 a:active {
-    color: #40f5ff;
+    color: #d9bd09;
 }
 
 
