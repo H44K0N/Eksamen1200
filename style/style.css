@@ -600,13 +600,13 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
 
 .fag-grid {
     display: grid;
-    /* 3 columns of equal width */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* 3 rows with automatic height */
     gap: 20px;
-    /* Space between grid items */
     margin-bottom: 30px;
     
+}
+.emnegruppe{
+    margin-top: 0;
 }
 
 @media (max-width: 480px) {
@@ -637,6 +637,9 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     gap: 10px;
     align-items: center;
     margin-right: 15px;
+}
+.p-container-under{
+display: flex;
 }
 
 
