@@ -64,11 +64,15 @@ Teste nettsidene med lighthouse sin , ikke tall, men tilbakemeldinger
 Teste koden med screen-readers?? 
 - **Gjort** på Activity. Testet med apple sin. 	
 
+Legge inn bilder av de automatikse testene?
+Ikke gjort!
+
 Skriv om at vi har gjort bruker test på begge sidene? Se s45 på pp accsessobility	
 
 Test nettsiden manuellet for accessibility Se s45 på pp accsessobility	
 
 Skrive teksten om accesibility 
+- **Gjort**????????????
 
 
 
