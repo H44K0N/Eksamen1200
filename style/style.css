@@ -1103,7 +1103,7 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 
 /* Henter section klasse fra aktivitetssiden og gjør unik for oppsett til GitHub-siden. */
 
-.git-seksjon {
+.git-section {
     width: 100%;
     margin-top: 40px;
     display: flex;
@@ -1112,7 +1112,7 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
 }
 
 @media (max-width: 1000px){
-    .git-seksjon {
+    .git-section {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
@@ -1122,7 +1122,7 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     }
 }
 
-.git-seksjon div{
+.git-section div{
     flex: 1;   
     margin-left: 10px;
     margin-right: 10px;
@@ -1132,14 +1132,14 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     overflow: auto;
 }
 
-.git-seksjon h2{
+.git-section h2{
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
 }
 
-.git-seksjon p{
+.git-section p{
     margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
