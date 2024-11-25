@@ -105,7 +105,8 @@ hr {
 /*                                    header                                   */
 /* --------------------------------------------------------------------------------------- */
 
-
+/* Flex-oppsett for horisontal nav */
+/* (gjemt for screen-readers) */
 .horizontal-nav {
     display: flex;
     flex-direction: row;
@@ -114,7 +115,11 @@ hr {
     max-width: 100%;
     overflow-x: hidden;
 }
-/* Style horisontal navigasjon (gjemt for screen-readers) */
+.horizontal-nav div {
+    background-color: #d9bd09;
+    font-weight: 400;
+}
+/* Flex-oppsett for horisontal navigasjon */
 nav div {
     display: flex;
     flex-direction: column;
@@ -136,18 +141,11 @@ nav div:hover {
         display: none;
     }
 }
-.horizontal-nav div {
-    background-color: #d9bd09;
-    font-weight: 400;
-}
-
+/* Flex-oppsett for header */
 header {
     display: flex;
     background-color: #d9bd09;
     padding: 10px 20px;
-    padding-top: 0;
-    z-index: 1000;
-    /* Higher z-index to ensure it's on top */
 }
 
 .logo {
@@ -155,13 +153,11 @@ header {
     max-height: 150px;
 }
 
-
-
-/* ------------------------------------------------------------------------------------------------- */
-/*                                       Responsiv nav-bar                                           */
-/*         hentet fra https://github.com/WebDevSimplified/css-only-hamburger-menu/tree/main          */
-/*         Tilpasset til oppgaven                                                                    */
-/* ------------------------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------------------------------- */
+/*                           Responsiv nav-bar                                           */
+/*hentet fra https://github.com/WebDevSimplified/css-only-hamburger-menu/tree/main-------*/
+/* Tilpasset til oppgaven (bl.a. endret plassering, farger, stil-elementer---------------*/
+/*---------------------------------------------------------------------------------------*/
 
 *::after,
 *::before {
@@ -188,15 +184,16 @@ header {
     gap: var(--hamburger-gap);
     width: max-content;
     position: fixed;
-    /* Use fixed to keep it at the top right */
+    /* Holder seg øverst på skjermen når man scroller */
     top: var(--hamburger-margin);
-    /* Distance from the top of the screen */
+    /* Avstand fra top */
     right: var(--hamburger-margin);
-    /* Distance from the right side of the screen */
+    /* avstand fra høyre-margin */
     z-index: 2;
+    /* Holder seg øverst */
     cursor: pointer;
 }
-
+/* Når man trykker på menyen: neste tre grupper */
 .hamburger-meny:has(input:checked) {
     --foreground: white;
     --background: #333;
@@ -303,8 +300,8 @@ nav a {
 }
 
 
-/*                                    main content layout felles                            */
-/* --------------------------------------------------------------------------------------- */
+/*                                 main content layout felles                            */
+/* ------------------------------------------------------------------------------------- */
 
 
 
