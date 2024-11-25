@@ -18,7 +18,9 @@
     <header>
         <img class="logo" src="media/logo-OsloMet.webp" alt="logo-OsloMet">
         <!-- Fotograf: ukjent. Bilde hentet fra OsloMet.no -->
-        <nav aria-hidden="true" class="horizontal-nav">
+
+<!--         Horisontal nav-bar (for sighted users)-->  
+          <nav aria-hidden="true" class="horizontal-nav">
             <a href="index.html">
                 <div>MatMod</div>
             </a>
@@ -32,6 +34,7 @@
                 <div>Tilgjengelighet</div>
             </a>
         </nav>
+     <!-- Hamburger-meny for mobil. (Er også main nav for screen-readers) -->   
         <label class="hamburger-meny">
             <input type="checkbox" aria-label="Navigasjonsmeny">
         </label>
@@ -53,7 +56,7 @@
         </aside>
     </header>
 
-     <!-- grid layout beståenda av tre bokser, en til venstre og høyre som brukes som responsive marger og en i midten hvor alt av innhold skal -->
+     <!-- grid layout beståenda av tre bokser, en til venstre og høyre som brukes som responsive margin og en i midten hvor alt av innhold skal -->
     <div class="content-grid">
         <div class="left-margin"></div>
         <main class="content">
@@ -102,7 +105,8 @@
                 samfunnsnyttige
                 oppgaver</p>
             <hr>
-            <article class="informasjon-seksjon">
+<!--             Informasjon om opptakskrav og poeng -->     
+               <article class="informasjon-seksjon">
                 <h2>
                     Opptakskrav og poeng
                 </h2>
@@ -127,6 +131,7 @@
                         ettårig kurs for ingeniørutdanning.</a></p>
             </article>
             <hr>
+            <!-- Slik søker du -->
             <article class="informasjon-seksjon">
 
                 <h2>Slik søker du</h2>
@@ -140,7 +145,7 @@
                     søke på bachelor.</a>
             </article>
             <hr>
-
+            <!-- Hva lærer du -->
             <article class="informasjon-seksjon">
                 <h2>Hva lærer du</h2>
 
@@ -190,10 +195,12 @@
                     </a></p>
             </article>
             <hr>
+            <!-- Studiets oppbygging -->
             <section id="Studiets-oppbygging">
                 <h2>Studiets oppbygging</h2>
-            
-                <!-- 1. studieår -->
+            <!-- Følgende seksjon består av fag-kort adskilt av semester-overskrifter -->
+            <!-- Mal for kort er divs som er merket med class="fag" -->
+            <!-- 1. studieår -->
                 <h3 class="Studieår-bakgrunn">1. studieår</h3>
                 <h2 class="Semester">1. Semester</h2>
                 <section id="Oppbygging" class="fag-grid">
@@ -498,7 +505,7 @@
             </section>
                         
             <hr>
-
+            <!-- Hvordan foregår undervisningen -->
             <article class="informasjon-seksjon">
         
                 <h2>Hvordan foregår undervisningen?</h2>
@@ -517,10 +524,10 @@
 
                 <p>For å gjennomføre studiet på normert tid, må du regne med
                      å bruke om lag 40 timer per uke på studierelatert arbeid 
-                     gjennom hele semesteret.  </p>
+                     gjennom hele semesteret.</p>
                      <hr>     
             </article>
-
+            <!-- Hva koster det -->
             <article class="informasjon-seksjon">
                 <h2>Hva koster det?</h2>
                 <a href="vg.no">Du betaler en semesteravgift hvert semester
@@ -530,7 +537,7 @@
                     (student.oslomet.no).</a> Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
                     <hr>
             </article>
-
+            <!-- Hva kan du jobbe som -->
             <article class="informasjon-seksjon">
                 <h2>Hva kan du jobbe som?</h2>
                 <p>
@@ -552,13 +559,13 @@
                 </p>
                 <hr>
             </article>
-
+            <!-- Utveksling -->
             <article class="informasjon-seksjon">
                 <h2>Utveksling</h2>
                 <p>Du kan dra på utveksling i femte semester.</p>
                 <hr>
             </article>
-
+            <!-- Videre studiemuligheter -->
             <article class="informasjon-seksjon">
                 <h2>Videre studiemuligheter ved OsloMet</h2>
                 <hr>
@@ -566,20 +573,17 @@
                 <p>Masterprogram | 2 år | Pilestredet i Oslo | Heltid</p>
                 <hr>
             </article>
-
             <article class="informasjon-seksjon">
                 <h2>Studiested</h2>
                <a href="vg.no">Studiestedet Pilestredet</a>
                 <hr>
             </article>
-
-
-           <article class="informasjon-seksjon">
+           <!-- Spørsmål om utdanningen -->
+            <article class="informasjon-seksjon">
             <h2>Spørmål om utdanningen?</h2>
             <a href="vg.no">Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema</a>
            </article>
-
-
+           <!-- Faglig leder -->
            <article class="informasjon-seksjon">
             <h2>Faglig leder</h2>
             <div class="faglig-leder-informasjon" >
@@ -593,7 +597,7 @@
                 </div>
             </div>
            </article>
-
+           <!-- Også interessert i -->
            <article class="informasjon-seksjon">
             <section class="andre-studier">
                 <h2>Du er kanskje også interessert i disse?</h2>
@@ -638,14 +642,11 @@
                 </div>
             </section>
            </article>
-
-
-            <!--Seksjoner for forsiden går over denne kommentaren -->
         </main>
         <div class="right-margin"></div>
     </div>
 
-     
+     <!-- Artikkel utenfor main-content-elementet -->
 <article>
     <div class="student-historier-conteiner">
         <div class="student-historier-overskrift-conteiner">
@@ -673,7 +674,7 @@
     </article>
 
    
-   
+   <!-- Footer -->
  <footer>
     <div class="sub-footer">
         <div class="footer-headline">
