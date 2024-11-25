@@ -78,7 +78,7 @@
                       <p> Hele nettstedet kan navigeres kun ved hjelp av tastatur, noe som er viktig for brukere som ikke kan bruke mus. Interaktive elementer som lenker, knapper og skjemaer har tydelig definerte fokusstiler, slik at det er lett å identifisere hvor man befinner seg under navigasjonen.</p>
                         
                         <h3>Tilpasninger for skjermlesere</h3>
-                       <p> Vi har implementert ARIA (Accessible Rich Internet Applications) for å gjøre det lettere for skjermlesere å få tilgang til interaktive elementer som menyer og skjemaer. Alt innhold, inkludert bilder og multimedia, er utstyrt med alternativ tekst (alt-tekst) som beskriver innholdet, og ved bruk av tabels har vi lagt til caption i tabellen og et systematisk bruk av "th>"" tagger med scope-attributtet for å gjøre innholdet tydelig for skjermlesere.</p>
+                       <p> Vi har implementert ARIA-Labels for å gjøre det lettere for skjermlesere å få tilgang til interaktive elementer som menyer og linker. Alt innhold, inkludert bilder og multimedia, er utstyrt med alternativ tekst (alt-tekst) som beskriver innholdet, og ved bruk av tabels har vi lagt til caption i tabellen og et systematisk bruk av "th>"" tagger med scope-attributtet for å gjøre innholdet tydelig for skjermlesere.</p>
                         
                         <h3>Responsivt og tilpasningsdyktig design</h3> 
                        <p> Nettsiden vår er designet for å fungere på alle skjermstørrelser og enheter. Det er mulig å zoome inn og ut uten at innholdet forvrenges. Vi har også sørget for at nettsiden fungerer like godt på små mobile enheter som på store skjermer.</p>
@@ -91,13 +91,15 @@
             <section>
                 <h2>Tilgjengelighetstesting</h2>
                 <p>
-                    Vi har brukt automatiserte tester som W3C Markup Validation Service og Accesibilitychecker.org for å sjekke kvaliteten på koden vår.<br> Disse testene har hjulpet oss med å identifisere og løse problemer med tilgjengelighet, som utilstrekkelig fargekontrast og manglende alternativ tekst for bilder. Vi har også gjennomført manuell testing for å sikre at nettstedet fungerer godt for alle brukere.
+                    Vi har brukt automatiserte tester som <a href="https://pagespeed.web.dev"> Google lighthouse</a> og <a href="https://www.accessibilitychecker.org/">Accessibilitychecker.org</a> for å sjekke kvaliteten på nettsiden vår. Disse testene har hjulpet oss med å identifisere og løse problemer med tilgjengelighet, som utilstrekkelig fargekontrast og manglende alternativ tekst for bilder. Vi har også gjennomført manuell testing for å sikre at nettstedet fungerer godt for alle brukere.
                 </p>
             </section>
             </article>
 <div>
     <img class="gitcommit1" src="media\accessibilitycheckerSH.webp" alt="Bilde av tilgjengelighetstesting">
+    <!--Skjermbilde fra https://acccessibilitychecker.org-->
     <img class="gitcommit1" src="media\pagespeedInsightsSH.webp" alt="Bilde av tilgjengelighetstesting">
+    <!--Skjermbilde fra Google lighthouse (https://pagespeed.web.dev)-->
 </div>
 
         </main>
