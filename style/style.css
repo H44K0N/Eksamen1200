@@ -1131,6 +1131,12 @@ på hver rad, som også skalerer seg etter skjermens størrelse.
     overflow: auto;
 }
 
+/* Class som fjerner bakgrunn på bildebokser,
+NB: overstyrer andre stylinger */
+
+.bildeboks{
+    background:none !important;
+}
 .git-section h2{
     margin-top: 40px;
     margin-left: 20px;
