@@ -693,22 +693,21 @@ display: flex;
 }
 
 
-.boks1{
+.student-historier-conteiner{
     display: flex;
     justify-content: center; 
     margin-top: 40px;
 }
 
-.boks2{
+.student-historier-overskrift-conteiner{
     width: 90%;
-   /* border: 2px solid rgb(189, 189, 189); */
     display: flex;
     border-radius: 15px;
     padding-left: 20px;
 
 }
 
-.boks3{
+.student-historier-sub-conteiner{
     display: flex;
     justify-content: center; 
     margin-top: 10px;
@@ -759,7 +758,7 @@ display: flex;
     margin-left: 10px;
 }
 
-.boks3 img{
+.student-historier-sub-conteiner img{
     width: 100%; 
     height: 100%;
     display: block;
