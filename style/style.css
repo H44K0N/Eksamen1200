@@ -1136,6 +1136,8 @@ NB: overstyrer andre stylinger */
 
 .bildeboks{
     background:none !important;
+/*  Flytter bildet nederst i parent-element*/
+    margin-top: auto;
 }
 .git-section h2{
     margin-top: 40px;
