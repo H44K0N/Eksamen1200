@@ -37,13 +37,12 @@ Bruke klasser i stedet for id. (PP selectors sier at id er for js).
 Kommentere kode i css, html for alle semantikse elementer og evt annen kode./
 - **Nesten Gjort** for css activity og footer. Mangler en del
 
+
 Bruke article og section inne i article i stedet for div?? 
+- **Gjort-for-activity**
 
 sjekke navn til klasser osv har nokså lik stil
 
-Bruke em for font-size > px. Bruk px for bilder, margins/paddings, %/vw for scaling, og px når du vil låse str, (se pp dimentions)		
-
-Lag felles klasser for bilder (str osv).	
 
 
 
