@@ -581,8 +581,6 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     padding-top: 16px;
 }
 
-
-
 .table-content {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
@@ -649,6 +647,7 @@ mindre skjermer: Stabler elementer til venstre i stedet for i midten.
     min-height: 150px;
     transition: 200ms ease;
 }
+
 .fag:hover{
     scale: 1.05;
 }
